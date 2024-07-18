@@ -1,0 +1,35 @@
+---
+import List from "./List.astro";
+interface Props {
+  subtitle: string;
+  paragraph1?: string;
+  paragraph2?: string;
+  paragraph3?: string;
+  paragraph4?: string;
+  tamanio?: string;
+}
+const { subtitle, paragraph1, paragraph2, paragraph3, paragraph4, tamanio } =
+  Astro.props;
+---
+
+<details class="list-none text-center flex flex-col space-y-4">
+  <summary
+    style={`font-size: ${tamanio}`}
+    class="border-y border-[#E3E3E3] w-full list-none text-3xl font-bold text-[#E3E3E3] cursor-default shadow-x text-center"
+    set:html={subtitle}
+  />
+  <div class="flex flex-col">
+    <p class="text-white font-bold max-w-2xl mx-auto sm:px-6 lg:px-8">
+      {paragraph1}
+    </p>
+    <p class="text-white font-bold max-w-2xl mx-auto sm:px-6 lg:px-8">
+      {paragraph2}
+    </p>
+    <p class="text-white font-bold max-w-2xl mx-auto sm:px-6 lg:px-8">
+      {paragraph3}
+    </p>
+    <p class="text-white font-bold max-w-2xl mx-auto sm:px-6 lg:px-8">
+      {paragraph4}
+    </p>
+  </div>
+</details>
