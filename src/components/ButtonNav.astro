@@ -1,0 +1,19 @@
+---
+interface Props {
+  link: string;
+  textLink: string;
+  color?: boolean;
+}
+const { link, textLink, color = false } = Astro.props;
+---
+
+<li
+  class:list={[
+    `text-xl px-4`,
+    {
+      "text-black bg-[#B680D5] ml-4": color,
+    },
+  ]}
+>
+  <a href={link}>{textLink}</a>
+</li>
