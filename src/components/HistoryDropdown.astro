@@ -12,13 +12,13 @@ const { subtitle, paragraph1, paragraph2, paragraph3, paragraph4, tamanio } =
   Astro.props;
 ---
 
-<details class="list-none text-center flex flex-col space-y-4">
+<details class="list-none text-center flex flex-col">
   <summary
     style={`font-size: ${tamanio}`}
     class="border-y border-[#E3E3E3] w-full list-none text-3xl font-bold text-[#E3E3E3] cursor-default shadow-x text-center"
     set:html={subtitle}
   />
-  <div class="flex flex-col">
+  <div class="">
     <p class="text-white font-bold max-w-2xl mx-auto sm:px-6 lg:px-8">
       {paragraph1}
     </p>
