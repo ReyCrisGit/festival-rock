@@ -1,0 +1,97 @@
+---
+import SlideContent from "../components/SlideContent.astro";
+import SliderInfinite from "../components/SliderInfinite.astro";
+import Layout from "../layouts/Layout.astro";
+import ImageProfile from "../components/ImageProfile.astro";
+import Sublogo from "../icons/Sublogo.astro";
+import Corazon from "../icons/Corazon.astro";
+import FondoSlider2 from "../assets/fondoSlider2.astro"
+---
+
+<Layout title="Nuestro Festival">
+  <div
+    class="h-8 bg-yellow-300 overflow-hidden whitespace-nowrap flex items-center"
+  >
+    <SliderInfinite>
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+    </SliderInfinite>
+    <SliderInfinite>
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+      <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
+    </SliderInfinite>
+  </div>
+  <section class="bg-gradient-to-b from-teal-50 to-skyblue-semi grid">
+    <div class="w-full flex justify-center pt-20">
+      <Sublogo />
+    </div>
+    <div
+      class="grid justify-items-center items-center mb-12 mt-12 overflow-hidden"
+    >
+      <div
+        class="px-[15%] [&>p]:text-3xl [&>p]:mb-2 [&>p]:text-center text-blue-950 [&>p]:font-medium relative z-30"
+      >
+        <p>
+          GRITO LATIDXS, INMERSIÓN MUSICAL DONDE CADA LATIDO CUENTA, ES UNA
+          PROPUESTA DE GRITO FESTIVAL Y LA CARRERA DE MÚSICA DE LA UNIVERSIDAD
+          MAYOR DE SAN SIMÓN, UN PROYECTO DE ARTE, MÚSICA Y CULTURA PARA LA
+          TRANSFORMACIÓN SOCIAL.
+        </p>
+        <p>
+          ES UNA TERAPIA MUSICAL QUE HACE USO DE LA MÚSICA CLÁSICA, COMBINADA
+          CON SONORIDADES Y MELODÍAS CURATIVAS DESARROLLADAS DURANTE UNA
+          INMERSIÓN MUSICAL, A TRAVÉS DE LAS CUALES SE INDUCE A LOS PACIENTES DE
+          LOS CENTROS MÉDICOS A UN RELAJACIÓN PROFUNDA Y CONEXIÓN HOLÍSTICA. EL
+          PROYECTO
+        </p>
+        <p>
+          PROMETE PROMETE SER UNA EXPERIENCIA ÚNICA, CON LA FINALIDAD DE GENERAR
+          UN PROCESO DE SANACIÓN, TRANQUILIZANTE Y SOSIEGO, DESDE LA PRODUCCIÓN
+          ESTAMOS CONVENCIDOS/AS DE QUE EL ARTE Y LA MÚSICA A TRAVÉS DE SU
+          SENSIBIIDAD CURAN LAS PERSONAS.
+        </p>
+      </div>
+
+      <div class="absolute h-auto flex justify-center z-10">
+        <Corazon />
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full">
+    <div class="bg-gradient-to-b from-skyblue-semi to-slate-50 h-[500px] flex">
+      <FondoSlider2 />
+    </div>
+  </section>
+
+  <section class="pt-16 pb-16 bg-gradient-to-b from-teal-50 to-skyblue-semi">
+    <div class="grid justify-center text-center">
+      <h3 class="text-4xl text-red-ligth font-bold">AGRADECIMIENTOS</h3>
+      <p class="text-blue-dark text-2xl">
+        Por hacer posible esta primera <br /> versión de Grito Latidxs
+      </p>
+    </div>
+    <div class="flex flex-wrap justify-center gap-40 mt-7 z-20">
+      <ImageProfile
+        name="Esther Rodrigez"
+        urlImage="/src/assets/persona1.png"
+      />
+      <ImageProfile
+        name="Josue Urioste Mancilla"
+        urlImage="/src/assets/persona2.png"
+      />
+      <ImageProfile
+        name="Aneliz Rodrigez"
+        urlImage="/src/assets/persona3.png"
+      />
+    </div>
+  </section>
+</Layout>
