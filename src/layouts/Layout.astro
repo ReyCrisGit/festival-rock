@@ -2,10 +2,11 @@
 import Navbar from "../components/Navbar.astro";
 interface Props {
   title: string;
-  bgColor: string;
+  bgColor?: string;
+  bgImage?: string;
 }
 
-const { title, bgColor } = Astro.props;
+const { title, bgColor, bgImage } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,11 +19,16 @@ const { title, bgColor } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body style={`background-color: ${bgColor}`}>
-    <header>
+  <body
+    style={`background-color: ${bgColor}; background-image: url('${bgImage}'); background-size: cover; background-repeat: no-repeat; background-position: center center;`}
+    class="min-h-screen min-w-screen flex flex-col"
+  >
+    <header class="w-full">
       <Navbar />
     </header>
-    <slot />
+    <main class="flex-grow w-full flex justify-center items-center">
+      <slot />
+    </main>
   </body>
 </html>
 <style is:global>
@@ -36,6 +42,13 @@ const { title, bgColor } = Astro.props;
       rgb(var(--accent-light)) 30%,
       white 60%
     );
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
   }
   html {
     font-family: system-ui, sans-serif;
