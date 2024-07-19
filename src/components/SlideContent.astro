@@ -1,0 +1,8 @@
+---
+interface Props {
+  textContent: string;
+}
+const { textContent } = Astro.props;
+---
+
+<span class="mx-1 text-blue-dark">{textContent}<slot /></span>
