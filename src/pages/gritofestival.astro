@@ -1,0 +1,53 @@
+---
+import LogoGrito from "../assets/LogoGrito.astro";
+import Calabera from "../assets/Calabera.astro";
+import FondoGrito from "../assets/FondoGrito.astro";
+import Layout from "../layouts/Layout.astro";
+import FondoSlider from "../assets/FondoSlider.astro";
+---
+
+<Layout title="Grito Festival">
+  <section class="overflow-hidden w-full relative">
+    <div class="z-20 w-full absolute grid grid-cols-2">
+      <div>
+        <LogoGrito />
+      </div>
+      <div class="flex flex-col items-center pt-11">
+        <h1 class="text-5xl font-extrabold text-white bg-[#DCE83B]">
+          LA TENEMOS CLARA:
+        </h1>
+        <p class="text-xl pt-10 px-[8%] text-center text-white">
+          Grito Festival, en su version Grito Rock es una plataforma gestionado
+          en red, producido de manera conjunta en diversas ciudades y países de
+          Latinoamérica, Europa y África.
+        </p>
+        <p class="text-xl pt-8 px-[7%] text-center text-white">
+          Por lo general se realiza en el período cercano a las fiestas del
+          primer semestre, llegando y articulando a más de 400 ciudades en el
+          mundo. Pionero en su lógica integrada, colaborativa y descentralizada,
+          el festival tiene una trayectoria de expansión sin precedentes.
+        </p>
+        <p class="text-xl pt-8 px-[6%] text-center text-white">
+          El Grito se caracteriza desde sus inicios por ser un festival
+          conectado con su tiempo y los cambios del planeta, articulando
+          campañas y acciones conjuntas a las transformaciones y nuevas
+          expresiones activistas.
+        </p>
+      </div>
+      <section class="">
+        <div class="pt-60 w-full absolute grid grid-cols-1">
+          <div>
+            <FondoSlider/>
+        </div>
+        <div class="pl-96 w-full h-full absolute grid grid-cols-1">
+          <Calabera/>
+
+        </div>    
+      </section>
+    </div>
+    <div class="z-8 bg-[#c581e4] h-full w-full top-0">
+      <FondoGrito />
+    </div>
+  </section>
+  </Layout
+>
