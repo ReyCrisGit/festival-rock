@@ -26,11 +26,11 @@ const { title, bgColor, bgImage } = Astro.props;
     <header class="w-full">
       <Navbar />
     </header>
-    <main class="flex-grow w-full flex justify-center items-center">
-      <slot />
-    </main>
+    <!-- <main class="flex-grow w-full flex justify-center items-center"> -->
+    <slot />
   </body>
 </html>
+
 <style is:global>
   :root {
     --accent: 136, 58, 234;
