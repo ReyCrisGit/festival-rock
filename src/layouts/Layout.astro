@@ -16,6 +16,7 @@ const { title, bgColor } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+
     <title>{title}</title>
   </head>
   <body style=`background-color:${bgColor}`>
@@ -25,6 +26,7 @@ const { title, bgColor } = Astro.props;
     <slot />
   </body>
 </html>
+
 <style is:global>
   :root {
     --accent: 136, 58, 234;
@@ -36,6 +38,7 @@ const { title, bgColor } = Astro.props;
       rgb(var(--accent-light)) 30%,
       white 60%
     );
+    box-sizing: border-box;
   }
   html {
     font-family: system-ui, sans-serif;

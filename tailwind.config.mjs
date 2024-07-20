@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,flowbite}"],
   theme: {
     extend: {
       keyframes: {
@@ -16,8 +16,8 @@ export default {
         "red-ligth": "#D45150",
         "blue-dark": "#233E63",
         "skyblue-semi": "#bee5e5",
+        "yellow-ligth": "#FFFF3C",
       },
     },
   },
-  plugins: [],
 };
