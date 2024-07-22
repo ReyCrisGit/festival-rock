@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ImageProfile from "../components/ImageProfile.astro";
+import FondoSlider from "../assets/FondoSlider.astro";
+import SliderImages from "../components/SliderImages.astro";
+import SlideImages from "../components/SliderImagesContent.astro";
+import SectionArticle from "../components/SectionArticle.astro";
+import Paragraph from "../components/Paragraph.astro";
+import SliderWrapperText from "../components/SliderWrapperText.astro";
+import GritoFestivalIconContainer from "../components/GritoFestivalIconContainer.astro";
+import CorazonIconContainer from "../components/CorazonIconContainer.astro";
+import SliderImagesButton from "../components/SliderImagesButton.astro";
+import Corazon from "../icons/Corazon.astro";
+---
+
+<Layout title="Nuestro Festival">
+  <SliderWrapperText />
+
+  <SectionArticle>
+    <GritoFestivalIconContainer />
+    <div class="w-3/4 text-blue-950 relative z-30" slot="article">
+      <Paragraph>
+        GRITO LATIDXS, INMERSIÓN MUSICAL DONDE CADA LATIDO CUENTA, ES UNA
+        PROPUESTA DE GRITO FESTIVAL Y LA CARRERA DE MÚSICA DE LA UNIVERSIDAD
+        MAYOR DE SAN SIMÓN, UN PROYECTO DE ARTE, MÚSICA Y CULTURA PARA LA
+        TRANSFORMACIÓN SOCIAL.
+      </Paragraph>
+      <Paragraph>
+        ES UNA TERAPIA MUSICAL QUE HACE USO DE LA MÚSICA CLÁSICA, COMBINADA CON
+        SONORIDADES Y MELODÍAS CURATIVAS DESARROLLADAS DURANTE UNA INMERSIÓN
+        MUSICAL, A TRAVÉS DE LAS CUALES SE INDUCE A LOS PACIENTES DE LOS CENTROS
+        MÉDICOS A UN RELAJACIÓN PROFUNDA Y CONEXIÓN HOLÍSTICA.
+      </Paragraph>
+      <Paragraph>
+        EL PROYECTO PROMETE PROMETE SER UNA EXPERIENCIA ÚNICA, CON LA FINALIDAD
+        DE GENERAR UN PROCESO DE SANACIÓN, TRANQUILIZANTE Y SOSIEGO, DESDE LA
+        PRODUCCIÓN ESTAMOS CONVENCIDOS/AS DE QUE EL ARTE Y LA MÚSICA A TRAVÉS DE
+        SU SENSIBIIDAD CURAN LAS PERSONAS.
+      </Paragraph>
+    </div>
+
+    <CorazonIconContainer slot="article"/>
+  </SectionArticle>
+
+  <section class="w-full py-16 h-full bg-gradient-to-b from-skyblue-semi to-slate-50">
+    <div class="absolute w-full grid justify-items-center items-center">
+      <SliderImages>
+        <SlideImages urlImage="/src/assets/Recurso1.png" slot="images" />
+        <SlideImages urlImage="/src/assets/Recurso2.png" slot="images" />
+        <SlideImages urlImage="/src/assets/persona3.png" slot="images" />
+        <SlideImages urlImage="/src/assets/persona2.png" slot="images" />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+      </SliderImages>
+    </div>
+    <div class="static flex justify-center z-10 w-full">
+      <FondoSlider />
+    </div>
+  </section>
+
+  <SectionArticle>
+    <div class="text-center">
+      <h3 class="text-4xl text-red-ligth font-bold">AGRADECIMIENTOS</h3>
+      <p class="text-blue-dark text-2xl">
+        Por hacer posible esta primera <br /> versión de Grito Latidxs
+      </p>
+    </div>
+
+    <div
+      class="flex flex-wrap justify-around mt-7 z-20 w-3/4 gap-8"
+      slot="article"
+    >
+      <ImageProfile
+        name="Esther Rodrigez"
+        urlImage="/src/assets/persona1.png"
+      />
+      <ImageProfile
+        name="Josue Urioste Mancilla"
+        urlImage="/src/assets/persona2.png"
+      />
+      <ImageProfile
+        name="Aneliz Rodrigez"
+        urlImage="/src/assets/persona3.png"
+      />
+    </div>
+  </SectionArticle>
+</Layout>

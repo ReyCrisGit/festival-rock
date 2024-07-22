@@ -3,12 +3,14 @@ import ButtonNav from "./ButtonNav.astro";
 import NavIcon from "./NavIcon.astro";
 ---
 
-<nav class="flex justify-between px-4 bg-black items-center h-16 font-bold">
+<nav
+  class="flex justify-between px-4 bg-black items-center h-16 font-bold w-full"
+>
   <NavIcon />
   <div class="flex">
     <ul class="flex text-white [&>li]:border-[#B680D5] [&>li]:border-r">
-      <ButtonNav link="#" textLink="GRITO FESTIVAL" />
-      <ButtonNav link="#" textLink="NUESTRO FESTIVAL" />
+      <ButtonNav link="/gritofestival/" textLink="GRITO FESTIVAL" />
+      <ButtonNav link="/nuestrofestival/" textLink="NUESTRO FESTIVAL" />
       <ButtonNav link="#" textLink="HISTÓRICO" />
       <ButtonNav link="#" textLink="CHEN'KO FERIA" />
     </ul>

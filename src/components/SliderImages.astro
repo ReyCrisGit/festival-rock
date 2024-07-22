@@ -1,0 +1,17 @@
+---
+
+---
+
+<div class="relative w-2/5" data-carousel="slide">
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-80">
+    <slot name="images" />
+  </div>
+
+  <div
+    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+  >
+    <slot name="button" />
+  </div>
+</div>
+
+<script src="/src/scripts/slider.js"></script>
