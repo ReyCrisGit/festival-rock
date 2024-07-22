@@ -3,14 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import ImageProfile from "../components/ImageProfile.astro";
 import FondoSlider from "../assets/FondoSlider.astro";
 import SliderImages from "../components/SliderImages.astro";
-import SlideImages from "../components/SliderImagesContent.astro";
+import SlideImagesContent from "../components/SliderImagesContent.astro";
 import SectionArticle from "../components/SectionArticle.astro";
 import Paragraph from "../components/Paragraph.astro";
 import SliderWrapperText from "../components/SliderWrapperText.astro";
 import GritoFestivalIconContainer from "../components/GritoFestivalIconContainer.astro";
 import CorazonIconContainer from "../components/CorazonIconContainer.astro";
 import SliderImagesButton from "../components/SliderImagesButton.astro";
-import Corazon from "../icons/Corazon.astro";
 ---
 
 <Layout title="Nuestro Festival">
@@ -39,31 +38,34 @@ import Corazon from "../icons/Corazon.astro";
       </Paragraph>
     </div>
 
-    <CorazonIconContainer slot="article"/>
+    <CorazonIconContainer slot="article" />
   </SectionArticle>
 
-  <section class="w-full py-16 h-full bg-gradient-to-b from-skyblue-semi to-slate-50">
-    <div class="absolute w-full grid justify-items-center items-center">
+  <section
+    class="w-full py-16 h-full bg-gradient-to-b from-skyblue-semi to-slate-50 flex items-center justify-center overflow-hidden"
+  >
+    <div class="absolute max-xl:w-5/6 w-3/4">
       <SliderImages>
-        <SlideImages urlImage="/src/assets/Recurso1.png" slot="images" />
-        <SlideImages urlImage="/src/assets/Recurso2.png" slot="images" />
-        <SlideImages urlImage="/src/assets/persona3.png" slot="images" />
-        <SlideImages urlImage="/src/assets/persona2.png" slot="images" />
+        <SlideImagesContent urlImage="/src/assets/Recurso1.png" slot="images" />
+        <SlideImagesContent urlImage="/src/assets/Recurso2.png" slot="images" />
+        <SlideImagesContent urlImage="/src/assets/persona3.png" slot="images" />
+        <SlideImagesContent urlImage="/src/assets/persona2.png" slot="images" />
         <SliderImagesButton slot="button" />
         <SliderImagesButton slot="button" />
         <SliderImagesButton slot="button" />
         <SliderImagesButton slot="button" />
       </SliderImages>
     </div>
-    <div class="static flex justify-center z-10 w-full">
+
+    <div class="w-full object-cover">
       <FondoSlider />
     </div>
   </section>
 
   <SectionArticle>
-    <div class="text-center">
+    <div class="text-center w-full">
       <h3 class="text-4xl text-red-ligth font-bold">AGRADECIMIENTOS</h3>
-      <p class="text-blue-dark text-2xl">
+      <p class="text-blue-dark text-2xl text-pretty">
         Por hacer posible esta primera <br /> versión de Grito Latidxs
       </p>
     </div>
