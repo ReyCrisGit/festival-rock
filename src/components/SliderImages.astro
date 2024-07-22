@@ -2,13 +2,13 @@
 
 ---
 
-<div class="relative w-2/5" data-carousel="slide">
-  <div class="relative h-56 overflow-hidden rounded-lg md:h-80">
+<div class="relative" data-carousel="slide">
+  <div class="relative h-96 overflow-hidden rounded-lg max-sm:h-56 2xl:h-[35rem]">
     <slot name="images" />
   </div>
 
   <div
-    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+    class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse items-center"
   >
     <slot name="button" />
   </div>
