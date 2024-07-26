@@ -1,27 +1,24 @@
 ---
-import SlideContent from "./SliderInfiniteContent.astro";
-import SliderInfinite from "./SliderInfinite.astro";
-
 
 ---
 
 <div
-  class="h-8 bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center"
+  class="h-8 bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center [&>div>h2]:mx-1 [&>div>h2]:text-blue-dark [&>div]:flex"
 >
-  <SliderInfinite>
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-  </SliderInfinite>
-  <SliderInfinite>
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-    <SlideContent textContent="/// GRITO LATIDXS - INMERSIÓN MUSICAL" />
-  </SliderInfinite>
+  <div class="animate-slide-infinite">
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+  </div>
+  <div class="animate-slide-infinite">
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+    <h2>/// GRITO LATIDXS - INMERSIÓN MUSICAL</h2>
+  </div>
 </div>
