@@ -21,6 +21,9 @@ export default {
         "skyblue-semi": "#bee5e5",
         "yellow-ligth": "#FFFF3C",
       },
+      boxShadow: {
+        "custom-shadow": "15px 11px 5px rgba(0, 0, 0, 1)",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

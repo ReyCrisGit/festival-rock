@@ -1,0 +1,27 @@
+---
+interface Props {
+  text1: string;
+  text2: string;
+  text3: string;
+  text4: string;
+}
+const { text1, text2, text3, text4 } = Astro.props;
+---
+
+<ul class="block text-start max-w-4xl mx-auto sm:px-6 lg:px-8 list-disc">
+  <li
+    class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8"
+    style={`padding-inline-end: 0.5em;`}
+  >
+    {text1}
+  </li>
+  <li class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8">
+    {text2}
+  </li>
+  <li class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8">
+    {text3}
+  </li>
+  <li class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8">
+    {text4}
+  </li>
+</ul>

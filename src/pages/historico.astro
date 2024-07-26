@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HistoryDropdown from "../components/HistoryDropdown.astro";
+import List from "../components/List.astro";
+---
+
+<Layout bgColor="#A28BFF" title="Histório">
+  <div class="flex flex-col items-center justify-center gap-7">
+    <h1
+      style={`text-shadow: black 5px 5px 5px;`}
+      class="text-8xl font-bold text-[#E3E3E3] text-sh pt-4"
+    >
+      GRITO ROCK ES:
+    </h1>
+    <div class="flex flex-col w-full gap-7">
+      <HistoryDropdown
+        subtitle='NARRATIVA "LA TENEMOS CLARA":'
+        paragraph1="Tenemos voces diversas, desde la diversidad nos construimos, somos colores, somos sabores, somos creatividad,  somos música, somos  rostros, somos arte, somos culturas, somos lo que queramos ser, somos a quienes elegimos amar, somos lo que expresamos, somos lo que soñamos, somos lo que vivimos, somos lo que transgredimos, somos diversos."
+        paragraph2="Por tanto, dentro del festival se desarrollan diferentes campañas sobre problemáticas que afectan a la ciudadanía, promoviendo una concientización sobre todo en lxs jóvenes, temáticas sociales como ser:"
+        ><List
+          text1="Conciencia ambiental"
+          text2="Incidencia cultural #LeyDeCulturasArtes"
+          text3="Género y diversidades"
+          text4="Entre otros"
+        /></HistoryDropdown
+      >
+
+      <HistoryDropdown
+        subtitle="GRITO CULTURA:"
+        paragraph1="Fomenta y promueve la integración del movimiento artístico musical y cultural tanto local, nacional, latinoamericano e intercontinental, a través de la circulación cultural, formación, redes de colaboración e intercambios entre artistas, bandas, productores y asistentes."
+      />
+      <HistoryDropdown
+        subtitle="GRITO COLAB. Y COOPERATIVO:"
+        paragraph1="Pionero en su lógica integrada, colaborativa y descentralizada, el festival tiene una trayectoria de expansión sin precedentes. Promueve su sostenibilidad desde las economías colaborativas y el hackeo de sistemas integrados a estructuras estatales y privadas."
+        paragraph2="El Grito se caracteriza desde sus inicios por ser un festival conectado con su tiempo y los cambios del planeta, articulando campañas y acciones conjuntas a las transformaciones y nuevas expresiones activistas. Fomentamos y potenciamos lógicas y prácticas basándose en el Trueque y el Ayni, como dinámicas colectivas, colaborativas y comunitarias."
+      />
+      <HistoryDropdown
+        subtitle="GRITO FORMACION:"
+        paragraph1="La potencialidad de la música en Bolivia radica en la fusión de elementos que permiten amplitud de sonidos, estéticas y conceptos, los que la apartan de la alineación sonora de la música foránea."
+        paragraph2="<span style='color: #FC0056;'>¿Cómo potenciar eso?</span> Con la formación de profesionales adecuados para cada ámbito de la cadena de producción musical, distribución y posicionamiento artístico a niveles nacionales e internacionales."
+        paragraph3="A través de Grito Rock se plantea la contextualización sobre las lógicas y dinámicas de producción y circulación de diferentes estilos musicales. El Grito fortalece los procesos formativos año tras año como parte de la plataforma que genera un movimiento de incidencia desde las expresiones artísticas y musicales, es por eso que trabaja en impulsar diferentes temáticas que son necesarias para el contexto local, nacional y latinoamericano."
+      />
+      <HistoryDropdown
+        subtitle="GRITO HOSPEDA:"
+        paragraph1="Hospeda Cultura, generamos hospedajes solidarios y de residencia artística en diferentes casas de nuestro mapeo que se suman a ser parte de la colaboración cultural, basándose en el Trueque y el Ayni con la finalidad de fortalecer el intercambio musical y la convivencia entre los artistas y la comunidad en general."
+        paragraph2="Hospeda Cultura es un aplicativo solidario que facilita la circulación de artistas, gestores y agentes activos de la cultura latinoamericana, de este modo, el tránsito de las manifestaciones artísticas tiene un impedimento menos. Vivencia, comparte y promueve el intercambio solidario de la cultura.¡Mi casa, tu casa!"
+        paragraph3="El mapeo de los hospedajes solidarios se mantiene permanente durante el año de forma opcional. La convocatoria  invita a participar de la red de Hospedajes Solidarios, conformada por casas, departamentos, residencias de estudiantes, residencias artísticas/culturales, espacios culturales, etc. que garantizan la atención y recepción de visitantes por un periodo mínimo de 1 noche a un máximo de 8 días o 7 noches, que puede ser extendido de acuerdo a las necesidades del huésped y a las posibilidades del punto de hospedaje."
+        paragraph4="La idea es que cada anfitrión, integrante de dicha red, reciba a sus invitados como huéspedes y que estos puedan formar parte del ambiente temporalmente, durante festivales, presentaciones escénicas, seminarios, congresos, talleres, giras y otros formatos de intercambio cultural. Además de la vivencia, el intercambio de conocimientos y flujos de experiencias, Hospeda Cultura promueve el aspecto solidario en las relaciones, optimizando los recursos."
+      />
+      <HistoryDropdown
+        subtitle="GRITO RED-REDES:"
+        paragraph1="Grito Festival,  surge a través de la articulación Telartes-Festivales en Red, Conectadas Latam, EMV Music, Copart - Cooperativa de Arte y Culturas Bolivia y Fora do Eixo y Cultura de Red de Brasil, permitiendo la circulación musical y cultural.  Se articulan y generan alianza para impulsar procesos de desarrollo cultural, artístico y social a través de estrategias fomento, fortalecimiento del ecosistema musical, generando un movimiento progresivo de futuro basado en la creatividad y en el rol protagonista de la cultura que posibilite inclusión, conciencia ambiental, producción económica y cohesión social."
+        paragraph2="Asimismo, buscamos la interacción de los artistas con el público en general, poniendo principal atención en las nuevas generaciones, verdaderos constructores de una cultura de futuro."
+        paragraph3="Articulamos ciudades como Potosí, Sucre y Tarija, Santa Cruz, Pando, Cochabamba y La Paz, entre otros."
+      />
+      <HistoryDropdown
+        subtitle="3-2-1 GRITOOO<br>COBERTURA FOTOGRAFICA:"
+        tamanio="2.5em"
+        paragraph1="Trabajamos en la formación y fomento de la fotografía colaborativa, convencidos en que la profesionalización de fotografía de campo en la escena musical es fundamental en nuestro contexto, creamos espacios y programas para el desarrollo de formación y fortalecimiento de fotógrafos en la puesta en escena musical."
+        paragraph2="La cobertura fotográfica es fundamental para visibilizar la manifestación  de nuestras expresiones de producción y presencia musical desde lo local para la presencia en el mapa global."
+        paragraph3="La comunidad de fotógrafos jóvenes están inmersos en procesos de colaboración, confianza, formación, intercambio, circulación, laboratorios de creación y experimentación; y la realización de exposiciones y muestras  que producen y montan sobre todo para público popular, intercultural e internacional."
+        paragraph4="Realizan coberturas fotográficas y de vídeo de festivales como el Grito Rock Mundo, Fiesta de la Música de la Alianza Francesa y en proyecto mARTadero, entre otros como puestas de escenas en la ciudad y el país con enfoque cultural y/o comercial."
+      />
+      <HistoryDropdown
+        subtitle="GRITO FEM POWER:"
+        paragraph1="El equipo GRITO FEM POWER, intencionalmente integrado por gestoras, comunicadoras y productoras, con la finalidad de fortalecer el rol de las mujeres en el ecosistema musical, vinculadas al movimiento de trabajadoras de las artes y culturas denominado “CONECTADAS LATINOAMÉRICA“."
+        paragraph2="Somos trabajadoras, lideramos proyectos, dirigimos, gestamos, creamos, producimos actividades y festivales artísticos - culturales a nivel local, nacional e internacional. Desde nuestras acciones promovemos procesos de circulación cultural, formación, reflexión, difusión, interpelación y articulación entre otras."
+      />
+      <HistoryDropdown
+        subtitle="GRITO RED DE PRODUCTORES:"
+        paragraph1="A nivel mundial se conforman circuitos de circulación para artistas musicales, productores/as y gestores culturales, con la finalidad de fortalecer plataformas y festivales que generen movimiento artístico y cultural, con condiciones de calidad ofreciendo  producciones de alto nivel."
+        paragraph2="La Red de las y los productorxs tiene intención de fomentar y detonar el debate sobre la situación actual del movimiento musical, precisamos debatir y dialogar sobre las posibilidades, condiciones y necesidades del sector musical, con la finalidad de generar mejores condiciones para la producción y gestión del sector musical. Los festivales y eventos musicales, generan espacios de formación no solo para los artistas musicales, sino para el público que asiste a los mismos espacios."
+      />
+      <HistoryDropdown subtitle="DATA GRITO ROCK:" />
+    </div>
+  </div>
+</Layout>
