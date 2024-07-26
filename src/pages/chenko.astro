@@ -5,9 +5,9 @@ import Layout from "../layouts/Layout.astro";
 <Layout
   title="Chenk'o Feria"
   bgColor="#84EBE3"
-  bgImage="/public/chenko_feria_fondo.png"
 >
-  <div class="flex flex-col gap-24 flex-grow items-center m-32">
+<section class="w-full h-lvh" style="background-image: url('/public/chenko_feria_fondo.png'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+  <div class="flex flex-col gap-24 flex-grow items-center mx-32 pt-32">
     <div class="relative w-[720px] h-20">
       <div
         class="border border-black z-0 w-full h-20 bg-rose-500 absolute left-[-0.5em] bottom-[0.5em]"
@@ -51,4 +51,5 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
   </div>
+</section>
 </Layout>
