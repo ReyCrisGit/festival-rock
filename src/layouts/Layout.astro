@@ -3,9 +3,10 @@ import Navbar from "../components/Navbar.astro";
 interface Props {
   title: string;
   bgColor?: string;
+  bgImage?: string;
 }
 
-const { title, bgColor } = Astro.props;
+const { title, bgColor, bgImage } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,7 +20,7 @@ const { title, bgColor } = Astro.props;
 
     <title>{title}</title>
   </head>
-  <body style=`background-color:${bgColor}`>
+  <body style=`background-color:${bgColor}; background-image: url('${bgImage}'); background-size: cover; background-repeat: no-repeat; background-position: center center;`>
     <header>
       <Navbar />
     </header>
