@@ -12,20 +12,20 @@ import SliderWrapperImages from "../components/SliderWrapperImages.astro";
 <Layout title="Grito Festival Latinoamerica">
   <main>
     <div class="-mt-1">
-      <img src="/src/assets/fondos/fondoInicio.png" alt="" />
+      <img src={import.meta.env.BASE_URL+"/img/fondos/fondoInicio.png"} alt="" />
     </div>
     <section class="h-2/6">
       <SliderImages>
         <SliderImagesContent
-          urlImage="/src/assets/Recurso1.png"
+          urlImage={import.meta.env.BASE_URL+"/img/Recurso1.png"}
           slot="images"
         />
         <SliderImagesContent
-          urlImage="/src/assets/Recurso2.png"
+          urlImage={import.meta.env.BASE_URL+"/img/Recurso2.png"}
           slot="images"
         />
         <SliderImagesContent
-          urlImage="/src/assets/fondos/fondoInicio.png"
+          urlImage={import.meta.env.BASE_URL+"/img/fondos/fondoInicio.png"}
           slot="images"
         />
         <SliderImagesButton slot="button" />
