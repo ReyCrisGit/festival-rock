@@ -6,7 +6,7 @@ import Layout from "../layouts/Layout.astro";
   title="Chenk'o Feria"
   bgColor="#84EBE3"
 >
-<section class="w-full h-lvh" style="background-image: url('/public/chenko_feria_fondo.png'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+<section class="w-full h-lvh" style="background-image: url({import.meta.env.BASE_URL+'/public/chenko_feria_fondo.png'}); background-size: cover; background-repeat: no-repeat; background-position: center center;">
   <div class="flex flex-col gap-24 flex-grow items-center mx-32 pt-32">
     <div class="relative w-[720px] h-20">
       <div
@@ -22,7 +22,7 @@ import Layout from "../layouts/Layout.astro";
       >
         <p class="text-white text-6xl font-bold">CHEN'KO FERIA</p>
         <img
-          src="/public/estrella_amarilla.png"
+          src={import.meta.env.BASE_URL+"/public/estrella_amarilla.png"}
           class="w-12"
           alt="estrella amarilla"
         />
@@ -47,7 +47,7 @@ import Layout from "../layouts/Layout.astro";
           economía creativa y tiene la finalidad de promocionar productos
           oriinales, fortaleciendo emprendimientos artísticos culturales.
         </p>
-        <img src="/public/estrella_rosa.png" class="w-12" alt="estrella rosa" />
+        <img src={import.meta.env.BASE_URL+"/public/estrella_rosa.png"} class="w-12" alt="estrella rosa" />
       </div>
     </div>
   </div>

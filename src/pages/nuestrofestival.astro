@@ -47,11 +47,11 @@ import SliderImagesButton from "../components/SliderImagesButton.astro";
     <div class="absolute max-xl:w-5/6 w-2/4 ">
       <SliderImages>
         <SliderImagesContent
-          urlImage="/src/assets/Recurso1.png"
+          urlImage={import.meta.env.BASE_URL+"/img/Recurso1.png"}
           slot="images"
         />
         <SliderImagesContent
-          urlImage="/src/assets/Recurso2.png"
+          urlImage={import.meta.env.BASE_URL+"/img/Recurso2.png"}
           slot="images"
         />
         <SliderImagesButton slot="button" />
@@ -78,15 +78,15 @@ import SliderImagesButton from "../components/SliderImagesButton.astro";
     >
       <ImageProfile
         name="Esther Rodrigez"
-        urlImage="/src/assets/persona1.webp"
+        urlImage={import.meta.env.BASE_URL+"/img/persona1.webp"}
       />
       <ImageProfile
         name="Josue Urioste Mancilla"
-        urlImage="/src/assets/persona2.webp"
+        urlImage={import.meta.env.BASE_URL+"/img/persona2.webp"}
       />
       <ImageProfile
         name="Aneliz Rodrigez"
-        urlImage="/src/assets/persona3.webp"
+        urlImage={import.meta.env.BASE_URL+"/img/persona3.webp"}
       />
     </div>
   </SectionArticle>

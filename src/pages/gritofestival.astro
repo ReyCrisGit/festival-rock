@@ -43,12 +43,9 @@ import FondoSliderInicio from "../assets/fondos/FondoSliderInicio.astro";
         <div class=" absolute w-full grid justify-items-center items-center">
           <div class="pt-80 absolute max-xl:w-5/6 w-3/4 grid grid-cols-1">
           <SliderImages>
-            <SliderImagesContent urlImage="/src/assets/B1.png" slot="images"  urlImage="/src/assets/B1.png" slot="images" />
-            <SliderImagesContent urlImage="/src/assets/B2.png" slot="images" />
-            <SliderImagesContent urlImage="/src/assets/persona3.webp" slot="images" />
-            <SliderImagesContent urlImage="/src/assets/persona2.webp" slot="images" />
-            <SliderImagesButton slot="button" />
-            <SliderImagesButton slot="button" />
+            <SliderImagesContent urlImage={import.meta.env.BASE_URL+"/img/B1.png"} slot="images" />
+            <SliderImagesContent urlImage={import.meta.env.BASE_URL+"/img/B2.png"} slot="images" />
+            
             <SliderImagesButton slot="button" />
             <SliderImagesButton slot="button" />
             
