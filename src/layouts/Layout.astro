@@ -1,5 +1,6 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
   bgColor?: string;
@@ -20,12 +21,11 @@ const { title, bgColor } = Astro.props;
     <title>{title}</title>
   </head>
   <body style=`background-color:${bgColor}; `>
-    <header>
-      <Navbar />
-    </header>
+    <Header />
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
 
