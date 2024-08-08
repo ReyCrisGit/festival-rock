@@ -11,21 +11,21 @@ import SliderWrapperImages from "../components/SliderWrapperImages.astro";
 
 <Layout title="Grito Festival Latinoamerica">
   <main>
-    <div class="-mt-1">
-      <img src={import.meta.env.BASE_URL+"/img/fondoInicio.webp"} alt="" />
+    <div class="-mt-1 h-full">
+      <img src={import.meta.env.BASE_URL + "/img/fondoInicio.webp"} alt="Inicio GritoRock" class="w-full"/>
     </div>
-    <section class="h-2/6">
+    <section class="w-full">
       <SliderImages>
         <SliderImagesContent
-          urlImage={import.meta.env.BASE_URL+"/img/Recurso1.png"}
+          urlImage={import.meta.env.BASE_URL + "/img/Recurso1.png"}
           slot="images"
         />
         <SliderImagesContent
-          urlImage={import.meta.env.BASE_URL+"/img/Recurso2.png"}
+          urlImage={import.meta.env.BASE_URL + "/img/Recurso2.png"}
           slot="images"
         />
         <SliderImagesContent
-          urlImage={import.meta.env.BASE_URL+"/img/fondoInicio.webp"}
+          urlImage={import.meta.env.BASE_URL + "/img/img1sliderindex.webp"}
           slot="images"
         />
         <SliderImagesButton slot="button" />
@@ -35,7 +35,7 @@ import SliderWrapperImages from "../components/SliderWrapperImages.astro";
     </section>
     <section class="bg-gradient-to-b from-teal-50 to-skyblue-semi">
       <header class="bg-black">
-        <h2 class="uppercase text-center text-8xl font-bold py-2">
+        <h2 class="uppercase text-center text-[6vw] font-bold">
           Auspiciadores
         </h2>
         <SliderWrapperText />
@@ -48,7 +48,9 @@ import SliderWrapperImages from "../components/SliderWrapperImages.astro";
           <Corazon />
         </div>
       </div>
-      <footer class="h-32 bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center">
+      <footer
+        class="h-32 bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center"
+      >
         <SliderWrapperImages />
       </footer>
     </section>
