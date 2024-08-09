@@ -7,12 +7,12 @@
     <div class="flex h-full justify-center items-center md:p-6 p-2">
       <div
         id="default-carousel"
-        class="relative w-[45vw]"
+        class="relative sm:w-[40vw] w-[85vw]"
         data-carousel="slide"
       >
         <!-- Slider Images -->
         <div
-          class="relative h-[35vw] overflow-hidden rounded-lg top-0 bottom-0"
+          class="relative sm:h-[30vw] h-[50vw] overflow-hidden rounded-lg top-0 bottom-0"
         >
           <slot />
         </div>
@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-  <div class="absolute w-full">
+  <div class="absolute w-full ">
     <slot name="bgSlider" />
   </div>
   <script src="/src/scripts/slider.js"></script>
