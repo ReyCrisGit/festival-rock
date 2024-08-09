@@ -7,35 +7,20 @@ import SliderImagesContent from "../components/SliderImagesContent.astro";
 import SliderWrapperText from "../components/SliderWrapperText.astro";
 import Layout from "../layouts/Layout.astro";
 import SliderWrapperImages from "../components/SliderWrapperImages.astro";
+import Logo6Music from "../icons/Logo6music.astro";
 ---
 
 <Layout title="Grito Festival Latinoamerica">
   <main>
     <div class="-mt-1">
-      <img src={import.meta.env.BASE_URL+"/img/fondoInicio.webp"} alt="" />
+      <img src={import.meta.env.BASE_URL + "/img/fondoInicio.webp"} alt="" />
     </div>
-    <section class="h-2/6">
-      <SliderImages>
-        <SliderImagesContent
-          urlImage={import.meta.env.BASE_URL+"/img/Recurso1.png"}
-          slot="images"
-        />
-        <SliderImagesContent
-          urlImage={import.meta.env.BASE_URL+"/img/Recurso2.png"}
-          slot="images"
-        />
-        <SliderImagesContent
-          urlImage={import.meta.env.BASE_URL+"/img/fondoInicio.webp"}
-          slot="images"
-        />
-        <SliderImagesButton slot="button" />
-        <SliderImagesButton slot="button" />
-        <SliderImagesButton slot="button" />
-      </SliderImages>
+    <section class="w-full grid place-items-center">
+      <img src={import.meta.env.BASE_URL + "/img/img1sliderindex.webp"} alt="">
     </section>
     <section class="bg-gradient-to-b from-teal-50 to-skyblue-semi">
-      <header class="bg-black">
-        <h2 class="uppercase text-center text-8xl font-bold py-2">
+      <header class="text-white bg-black">
+        <h2 class="uppercase text-center text-[6vw] font-bold">
           Auspiciadores
         </h2>
         <SliderWrapperText />
@@ -48,8 +33,34 @@ import SliderWrapperImages from "../components/SliderWrapperImages.astro";
           <Corazon />
         </div>
       </div>
-      <footer class="h-32 bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center">
-        <SliderWrapperImages />
+      <footer
+        class="h-32 bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center"
+      >
+        <div
+          class="flex justify-evenly items center py-4 gap-4 w-full [&_img]:w-auto [&_img]:h-24"
+        >
+          <img
+            src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
+            alt="EmvMusic logo"
+          />
+          <img
+            src={import.meta.env.BASE_URL + "/img/gritofestivalblack.webp"}
+            alt="Grito Festival logo"
+          />
+          <img
+            src={import.meta.env.BASE_URL + "/img/gritorockblackwebp.webp"}
+            alt="Grito Rock logo"
+          />
+          <img
+            src={import.meta.env.BASE_URL + "/img/fundaciongaiapachalogo.webp"}
+            alt="Fundación Gaia Pacha logo"
+          />
+          <img
+            src={import.meta.env.BASE_URL + "/img/umsslogo.webp"}
+            alt="UMSS logo"
+          />
+          <Logo6Music />
+        </div>
       </footer>
     </section>
   </main>

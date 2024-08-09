@@ -6,62 +6,97 @@ import SliderImages from "../components/SliderImages.astro";
 import SliderImagesButton from "../components/SliderImagesButton.astro";
 import SliderImagesContent from "../components/SliderImagesContent.astro";
 import FondoSliderInicio from "../assets/fondos/FondoSliderInicio.astro";
+import Rompe from "../icons/Rompe.astro";
+import Equipo from "../icons/Equipo.astro";
 ---
 
 <Layout title="Grito Festival">
-
-    <div class=" w-full absolute grid grid-cols-2">
-      <div>
-        <LogoGrito />
-      </div>
-      <div class="flex flex-col items-center pt-11 [&_p]:text-3xl  [&_p]:pt-20 [&_p]:px-[6%] [&_p]:text-center [&_p]:text-white">
-        <h1 class="text-6xl font-extrabold text-white bg-[#DCE83B]">
-          LA TENEMOS CLARA:
-        </h1>
+  
+  <div class=" w-full absolute grid grid-cols-2">
+		  
+    <div>
+    <LogoGrito />
+    </div>
+    <div class="flex flex-col items-center pt-11 [&_p]:text-3xl  [&_p]:pt-20 [&_p]:px-[6%] [&_p]:text-center [&_p]:text-white">
+			<h1 class="text-6xl font-extrabold text-white bg-[#DCE83B]">
+			  LA TENEMOS CLARA:
+			</h1>
+			<p>
+			  Grito Festival, en su version Grito Rock es una plataforma gestionado
+			  en red, producido de manera conjunta en diversas ciudades y países de
+			  Latinoamérica, Europa y África.
+			</p>
+			<p>          Por lo general se realiza en el período cercano a las fiestas del
+			  primer semestre, llegando y articulando a más de 400 ciudades en el
+			  mundo. Pionero en su lógica integrada, colaborativa y descentralizada,
+			  el festival tiene una trayectoria de expansión sin precedentes.
+			</p>
+			<p>          El Grito se caracteriza desde sus inicios por ser un festival
+			  conectado con su tiempo y los cambios del planeta, articulando
+			  campañas y acciones conjuntas a las transformaciones y nuevas
+			  expresiones activistas.
+			</p>
+		  </div>
+    
+      <section class="w-full h-full bg-gradient-to-b items-center justify-center overflow-hidden">
+			
+			  <div class="absolute max-xl:w-5/6 w-2/4 ">
+				
+			  <SliderImages>
+				<SliderImagesContent urlImage={import.meta.env.BASE_URL+"/img/B1.png"} slot="images" />
+				<SliderImagesContent urlImage={import.meta.env.BASE_URL+"/img/B2.png"} slot="images" />
+				
+				<SliderImagesButton slot="button" />
+				<SliderImagesButton slot="button" />
+				
+			  </SliderImages>
+			</div> 
+			  <div class="pt- w-full object-cover absolute ">
+				<div>
+				  <FondoSliderInicio/>  
+			  </div> 
+				
+			  </div>
+			</div>
+			</div>
+			  
+		  </section>
+      <div class="bg-[#c581e4] h-full">
+        <FondoGrito />
+      </div >
+    
+    <div class="overflow-hidden">
+      <div class="text-6xl text-white bg-[#0ad0f3] ">
+        <h1 class="pt-16 absolute font-bold text-center w-full">
+          COMPONENTES
+      </h1>
+      <div class="absolute flex flex-col items-center pt-28 [&_p]:text-5xl  [&_p]:pt-16 [&_p]:px-[1%] [&_p]:text-center [&_p]:text-black">
         <p>
           Grito Festival, en su version Grito Rock es una plataforma gestionado
           en red, producido de manera conjunta en diversas ciudades y países de
           Latinoamérica, Europa y África.
         </p>
-        <p>          Por lo general se realiza en el período cercano a las fiestas del
+        <p>Por lo general se realiza en el período cercano a las fiestas del
           primer semestre, llegando y articulando a más de 400 ciudades en el
           mundo. Pionero en su lógica integrada, colaborativa y descentralizada,
           el festival tiene una trayectoria de expansión sin precedentes.
         </p>
-        <p>          El Grito se caracteriza desde sus inicios por ser un festival
+        <p>El Grito se caracteriza desde sus inicios por ser un festival
           conectado con su tiempo y los cambios del planeta, articulando
           campañas y acciones conjuntas a las transformaciones y nuevas
           expresiones activistas.
         </p>
       </div>
-
-
-
-      
-      <section class=" w-full py-16 h-full">
-        <div class=" absolute w-full grid justify-items-center items-center">
-          <div class="pt-80 absolute max-xl:w-5/6 w-3/4 grid grid-cols-1">
-          <SliderImages>
-            <SliderImagesContent urlImage={import.meta.env.BASE_URL+"/img/B1.png"} slot="images" />
-            <SliderImagesContent urlImage={import.meta.env.BASE_URL+"/img/B2.png"} slot="images" />
-            
-            <SliderImagesButton slot="button" />
-            <SliderImagesButton slot="button" />
-            
-          </SliderImages>
-          
-        </div>
-        
-          <div class="w-full object-cover">
-            <div>
-              <FondoSliderInicio/>  
-          </div>  
-      </section>
-
-    </div>
-    <div class="bg-[#c581e4] h-full  top-0">
-      <FondoGrito />
-    </div>
+      <Rompe/>
+      </div>
+      <header class="bg-yellow-300">
+        <h2 class="text-white uppercase text-center text-8xl font-bold py-2">
+          equipo
+        </h2>
+      </header>
+   <div>
+  <Equipo/>  
+  </div> 
   
   </Layout
 >
