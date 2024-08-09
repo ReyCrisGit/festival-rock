@@ -1,67 +1,122 @@
 ---
 import Corazon from "../icons/Corazon.astro";
 import Sublogo from "../icons/Sublogo.astro";
-import SliderImages from "../components/SliderImages.astro";
-import SliderImagesButton from "../components/SliderImagesButton.astro";
-import SliderImagesContent from "../components/SliderImagesContent.astro";
 import SliderWrapperText from "../components/SliderWrapperText.astro";
 import Layout from "../layouts/Layout.astro";
-import SliderWrapperImages from "../components/SliderWrapperImages.astro";
 import Logo6Music from "../icons/Logo6music.astro";
+import SliderPrincipalIndex from "../components/SliderPrincipalIndex.astro";
+import FondoGritoElectroText from "../assets/fondos/FondoGritoElectroText.astro";
+import SliderHeaderTitle from "../components/SliderHeaderTitle.astro";
+import SliderGritos from "../components/SliderGritos.astro";
+import SliderImagesContent from "../components/SliderImagesContent.astro";
+import SliderImagesButton from "../components/SliderImagesButton.astro";
+import SliderLeftButton from "../components/SliderLeftButton.astro";
+import SliderRightButton from "../components/SliderRightButton.astro";
+import FondoGritoUrbanoText from "../assets/fondos/FondoGritoUrbanoText.astro";
+import FondoGritoElectro from "../assets/fondos/FondoGritoElectro.astro";
+import FondoGritoUrbano from "../assets/fondos/FondoGritoUrbano.astro";
 ---
 
 <Layout title="Grito Festival Latinoamerica">
-  <main>
-    <div class="-mt-1">
-      <img src={import.meta.env.BASE_URL + "/img/fondoInicio.webp"} alt="" />
-    </div>
-    <section class="w-full grid place-items-center">
-      <img src={import.meta.env.BASE_URL + "/img/img1sliderindex.webp"} alt="">
-    </section>
-    <section class="bg-gradient-to-b from-teal-50 to-skyblue-semi">
-      <header class="text-white bg-black">
-        <h2 class="uppercase text-center text-[6vw] font-bold">
-          Auspiciadores
-        </h2>
-        <SliderWrapperText />
-      </header>
-      <div class="grid place-items-center py-28 overflow-hidden">
-        <div class="w-2/4 relative z-20">
-          <Sublogo />
-        </div>
-        <div class="absolute w-[28%]">
-          <Corazon />
-        </div>
+  <div class="-mt-1 h-full">
+    <img
+      src={import.meta.env.BASE_URL + "/img/fondoInicio.webp"}
+      alt="Inicio GritoRock"
+      class="h-[42vw]"
+    />
+  </div>
+  <section class="w-full">
+    <SliderPrincipalIndex />
+  </section>
+
+  <section class="bg-gradient-to-b from-teal-50 to-skyblue-semi">
+    <header class="text-white bg-black">
+      <h2 class="uppercase text-center text-[6vw] font-bold">Auspiciadores</h2>
+      <SliderWrapperText />
+    </header>
+    <div class="grid place-items-center py-28 overflow-hidden">
+      <div class="w-2/4 relative z-20">
+        <Sublogo />
       </div>
-      <footer
-        class="h-32 bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center"
+      <div class="absolute w-[28%]">
+        <Corazon />
+      </div>
+    </div>
+    <footer
+      class="h-auto bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center"
+    >
+      <div
+        class="flex justify-evenly items-center flex-wrap max-xl:p-4 py-4 md:gap-4 gap-1 w-full [&_img]:w-auto [&_img]:h-24 max-md:[&_img]:h-12"
       >
-        <div
-          class="flex justify-evenly items center py-4 gap-4 w-full [&_img]:w-auto [&_img]:h-24"
-        >
-          <img
-            src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
-            alt="EmvMusic logo"
-          />
-          <img
-            src={import.meta.env.BASE_URL + "/img/gritofestivalblack.webp"}
-            alt="Grito Festival logo"
-          />
-          <img
-            src={import.meta.env.BASE_URL + "/img/gritorockblackwebp.webp"}
-            alt="Grito Rock logo"
-          />
-          <img
-            src={import.meta.env.BASE_URL + "/img/fundaciongaiapachalogo.webp"}
-            alt="Fundación Gaia Pacha logo"
-          />
-          <img
-            src={import.meta.env.BASE_URL + "/img/umsslogo.webp"}
-            alt="UMSS logo"
-          />
-          <Logo6Music />
-        </div>
-      </footer>
-    </section>
-  </main>
+        <img
+          src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
+          alt="EmvMusic logo"
+          class="drop-shadow-3xl"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/gritofestivalblack.webp"}
+          alt="Grito Festival logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/gritorockblackwebp.webp"}
+          alt="Grito Rock logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/fundaciongaiapachalogo.webp"}
+          alt="Fundación Gaia Pacha logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/umsslogo.webp"}
+          alt="UMSS logo"
+        />
+        <Logo6Music />
+      </div>
+    </footer>
+  </section>
+
+  <section class="flex max-md:flex-wrap">
+    <!-- Grito Electro -->
+    <SliderHeaderTitle title="Grito Electro">
+      <FondoGritoElectroText slot="bgText" />
+      <SliderGritos slot="slider">
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderLeftButton />
+        <SliderRightButton />
+        <FondoGritoElectro slot="bgSlider" />
+      </SliderGritos>
+    </SliderHeaderTitle>
+
+    <!-- Grito Urbano -->
+    <SliderHeaderTitle title="Grito Urbano">
+      <FondoGritoUrbanoText slot="bgText" />
+      <SliderGritos slot="slider">
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+        />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderLeftButton />
+        <SliderRightButton />
+        <FondoGritoUrbano slot="bgSlider" />
+      </SliderGritos>
+    </SliderHeaderTitle>
+  </section>
 </Layout>
