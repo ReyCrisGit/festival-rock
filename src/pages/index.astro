@@ -5,7 +5,16 @@ import SliderWrapperText from "../components/SliderWrapperText.astro";
 import Layout from "../layouts/Layout.astro";
 import Logo6Music from "../icons/Logo6music.astro";
 import SliderPrincipalIndex from "../components/SliderPrincipalIndex.astro";
-import SliderGritoElectro from "../components/SliderGritoElectro.astro"
+import FondoGritoElectroText from "../assets/fondos/FondoGritoElectroText.astro";
+import SliderHeaderTitle from "../components/SliderHeaderTitle.astro";
+import SliderGritos from "../components/SliderGritos.astro";
+import SliderImagesContent from "../components/SliderImagesContent.astro";
+import SliderImagesButton from "../components/SliderImagesButton.astro";
+import SliderLeftButton from "../components/SliderLeftButton.astro";
+import SliderRightButton from "../components/SliderRightButton.astro";
+import FondoGritoUrbanoText from "../assets/fondos/FondoGritoUrbanoText.astro";
+import FondoGritoElectro from "../assets/fondos/FondoGritoElectro.astro";
+import FondoGritoUrbano from "../assets/fondos/FondoGritoUrbano.astro";
 ---
 
 <Layout title="Grito Festival Latinoamerica">
@@ -37,7 +46,7 @@ import SliderGritoElectro from "../components/SliderGritoElectro.astro"
       class="h-auto bg-yellow-ligth overflow-hidden whitespace-nowrap flex items-center"
     >
       <div
-        class="flex justify-evenly items-center flex-wrap max-xl:p-4 max-sm:flex-col py-4 gap-4 w-full [&_img]:w-auto [&_img]:h-24"
+        class="flex justify-evenly items-center flex-wrap max-xl:p-4 py-4 md:gap-4 gap-1 w-full [&_img]:w-auto [&_img]:h-24 max-md:[&_img]:h-12"
       >
         <img
           src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
@@ -64,12 +73,50 @@ import SliderGritoElectro from "../components/SliderGritoElectro.astro"
       </div>
     </footer>
   </section>
-  <section class="flex h-[40vw]">
-    <!-- GRITO ELECTRO -->
-   <SliderGritoElectro/>
 
-    <!-- GRITO URBANO -->
-    <!-- <SliderGritoElectro/> -->
+  <section class="flex max-md:flex-wrap">
+    <!-- Grito Electro -->
+    <SliderHeaderTitle title="Grito Electro">
+      <FondoGritoElectroText slot="bgText" />
+      <SliderGritos slot="slider">
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderLeftButton />
+        <SliderRightButton />
+        <FondoGritoElectro slot="bgSlider" />
+      </SliderGritos>
+    </SliderHeaderTitle>
 
+    <!-- Grito Urbano -->
+    <SliderHeaderTitle title="Grito Urbano">
+      <FondoGritoUrbanoText slot="bgText" />
+      <SliderGritos slot="slider">
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesContent
+          urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+        />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderImagesButton slot="button" />
+        <SliderLeftButton />
+        <SliderRightButton />
+        <FondoGritoUrbano slot="bgSlider" />
+      </SliderGritos>
+    </SliderHeaderTitle>
   </section>
 </Layout>

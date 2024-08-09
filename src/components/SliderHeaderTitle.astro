@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<div class="flex flex-col w-full">
+  <div class="grid place-items-center">
+    <div class="absolute">
+      <h2 class="uppercase text-[3vw] font-semibold relative">{title}</h2>
+    </div>
+    <div class="w-full object-cover">
+      <slot name="bgText" />
+    </div>
+  </div>
+  <slot name="slider" />
+</div>
