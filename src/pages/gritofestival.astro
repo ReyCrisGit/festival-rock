@@ -2,7 +2,6 @@
 import LogoGrito from "../icons/LogoGrito.astro";
 import FondoGrito from "../assets/fondos/FondoGrito.astro";
 import Layout from "../layouts/Layout.astro";
-import SliderImages from "../components/SliderImages.astro";
 import SliderImagesButton from "../components/SliderImagesButton.astro";
 import SliderImagesContent from "../components/SliderImagesContent.astro";
 import FondoSliderInicio from "../assets/fondos/FondoSliderInicio.astro";
@@ -11,17 +10,16 @@ import Equipo from "../icons/Equipo.astro";
 import SliderGritos from "../components/SliderGritos.astro";
 import SliderLeftButton from "../components/SliderLeftButton.astro";
 import SliderRightButton from "../components/SliderRightButton.astro";
+import Calabera from "../icons/Calabera.astro";
 ---
 
 <Layout title="Grito Festival | Grito Rock ">
 
-    <div class=" w-full absolute grid grid-cols-2">
+    <div class="w-full absolute grid grid-cols-2">
       <div>
         <LogoGrito />
       </div>
-      <div
-        class="flex flex-col items-center pt-11 [&_p]:text-3xl [&_p]:pt-20 [&_p]:px-[6%] [&_p]:text-center [&_p]:text-white"
-      >
+      <div class="flex flex-col items-center pt-11 [&_p]:text-3xl  [&_p]:pt-20 [&_p]:px-[6%] [&_p]:text-center [&_p]:text-white">
         <h1 class="text-6xl font-extrabold text-white bg-[#DCE83B]">
           LA TENEMOS CLARA:
         </h1>
@@ -30,74 +28,74 @@ import SliderRightButton from "../components/SliderRightButton.astro";
           en red, producido de manera conjunta en diversas ciudades y países de
           Latinoamérica, Europa y África.
         </p>
-        <p>
-          Por lo general se realiza en el período cercano a las fiestas del
+        <p>Por lo general se realiza en el período cercano a las fiestas del
           primer semestre, llegando y articulando a más de 400 ciudades en el
           mundo. Pionero en su lógica integrada, colaborativa y descentralizada,
           el festival tiene una trayectoria de expansión sin precedentes.
         </p>
-        <p>
-          El Grito se caracteriza desde sus inicios por ser un festival
+        <p>El Grito se caracteriza desde sus inicios por ser un festival
           conectado con su tiempo y los cambios del planeta, articulando
           campañas y acciones conjuntas a las transformaciones y nuevas
           expresiones activistas.
         </p>
       </div>
-    </section>
-<section class="">
-      <div class="absolute pt-96 flex max-md:flex-wrap">
+
+
+
+      
+      <section class="pt-20">
+        <div class="absolute w-full">
+          <Calabera>
+            </div> 
+
+        <div class="pl-24 pt-96 absolute grid justify-items-center grid-cols-2 ">
+          
+            <SliderGritos slot="slider">
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+              />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderLeftButton />
+              <SliderRightButton />
+            </SliderGritos>
         
-        <!-- Grito Electro -->
+          <!-- Grito Urbano -->
+            <SliderGritos slot="slider">
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+              />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderLeftButton />
+              <SliderRightButton />
+            </SliderGritos>
+          </SliderHeaderTitle>
+            <div class="pt-72">
+              <FondoSliderInicio>
+          </div>
+      </section>
 
-        <SliderGritos slot="slider">
-          <SliderImagesContent
-            urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
-          />
-          <SliderImagesContent
-            urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
-          />
-          <SliderImagesContent
-            urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
-          />
-          <SliderImagesButton slot="button" />
-          <SliderImagesButton slot="button" />
-          <SliderImagesButton slot="button" />
-          <SliderLeftButton />
-          <SliderRightButton />
-        </SliderGritos>
-
-        <!-- Grito Urbano -->
-
-        <SliderGritos slot="slider">
-          <SliderImagesContent
-            urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
-          />
-          <SliderImagesContent
-            urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
-          />
-          <SliderImagesContent
-            urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
-          />
-          <SliderImagesButton slot="button" />
-          <SliderImagesButton slot="button" />
-          <SliderImagesButton slot="button" />
-          <SliderLeftButton />
-          <SliderRightButton />
-        </SliderGritos>
-      </div>
-     
-      </div>
     </div>
-    <div class="absolute w-full">
-      <div class="absolute w-full pt-96">
-      <FondoSliderInicio/>
-  </section>
-</section>
-  <div class="bg-[#c581e4] h-full">
-    <FondoGrito />
-  </div>
-
-  <!-- Componentes -->
+    <div class="bg-[#c581e4] h-full  top-0">
+      <FondoGrito />
+    </div>
+  
+    <!-- Componentes -->
   <div class="overflow-hidden">
     <div class="text-6xl text-white bg-[#0ad0f3]">
       <h1 class="pt-16 absolute font-bold text-center w-full">COMPONENTES</h1>
@@ -134,4 +132,5 @@ import SliderRightButton from "../components/SliderRightButton.astro";
       <Equipo />
     </div>
   </div>
-</Layout>
+  </Layout
+>
