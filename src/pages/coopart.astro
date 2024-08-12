@@ -4,25 +4,31 @@ import FondoCoopart from "../assets/fondos/FondoCoopart.astro";
 ---
 
 <Layout title="CoopArt | Grito Rock | Grito Festival">
-  <section>
-    <FondoCoopart />
+  <section
+    class="flex bg-white h-screen w-full text-center relative overflow-hidden"
+  >
+    <div class=`z-10 flex flex-col h-full w-full justify-center`>
+      <h1
+        class="bg-[#000000ad] md:text-[2vw] md:leading-[3vw] text-2xl md:px-32 px-3 font-bold tracking-[0.2rem]"
+      >
+        Hacemos historia feminizando escenarios<br />Articula a artistas,
+        diseñadores, productorxs,<br /> tiendas musicales y otros que generan economía
+        <br />
+        creativa y tiene la finalidad de promocionar <br /> productos originales,
+        fortaleciendo <br /> emprendimientos artísticos culturales.
+      </h1>
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full">
+      <img
+        src="/public/img/fondomovilcoopart.webp"
+        alt=""
+        class="h-full w-full object-cover object-center hidden small:block"
+      />
+      <img
+        src="/public/img/fondoCoopart.webp"
+        alt=""
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
   </section>
 </Layout>
----
-import FondoCoopart from "../assets/fondos/FondoCoopart.astro";
-import Layout from "../layouts/Layout.astro";
----
-<Layout title="Coopart">
-    <h1
-    class="bg-local absolute text-5xl text-[#000000]"
-  >
-  Hacemos historia feminizando escenarios 
-  Articula a artistas, diseñadores, productorxs, tiendas musicales y otros que generan economía creativa y tiene la finalidad de promocionar productos originales, fortaleciendo  emprendimientos artísticos culturales.
-  
-  </h1>
-        <div class="w-full object-cover">
-            <FondoCoopart/>
-        </div>
-        
-   </Layout>
-  
