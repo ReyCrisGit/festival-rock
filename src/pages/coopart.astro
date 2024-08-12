@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import FondoCoopart from "../assets/fondos/FondoCoopart.astro";
+import Logo6Music from "../icons/Logo6music.astro";
 ---
 
 <Layout title="CoopArt | Grito Rock | Grito Festival">
@@ -17,6 +18,77 @@ import FondoCoopart from "../assets/fondos/FondoCoopart.astro";
         creativa y tiene la finalidad de promocionar <br /> productos originales,
         fortaleciendo <br /> emprendimientos artísticos culturales.
       </h1>
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full">
+      <img
+        src="/public/img/fondomovilcoopart.webp"
+        alt=""
+        class="h-full w-full object-cover object-center hidden small:block"
+      />
+      <img
+        src="/public/img/fondoCoopart.webp"
+        alt=""
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
+  </section>
+
+  <section
+    class="flex bg-white h-screen w-full text-center relative overflow-hidden"
+  >
+    <div class=`z-10 flex flex-col h-full w-full justify-center`>
+      <h1
+        class="bg-[#000000ad] md:text-[2vw] md:leading-[3vw] text-2xl md:px-32 px-3 font-bold tracking-[0.2rem]"
+      >
+        Hacemos historia feminizando escenarios<br />Articula a artistas,
+        diseñadores, productorxs,<br /> tiendas musicales y otros que generan economía
+        <br />
+        creativa y tiene la finalidad de promocionar <br /> productos originales,
+        fortaleciendo <br /> emprendimientos artísticos culturales.
+      </h1>
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full">
+      <img
+        src="/public/img/fondomovilcoopart.webp"
+        alt=""
+        class="h-full w-full object-cover object-center hidden small:block"
+      />
+      <img
+        src="/public/img/fondoCoopart.webp"
+        alt=""
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
+  </section>
+
+  <section
+    class="flex bg-white h-screen w-full text-center relative overflow-hidden"
+  >
+    <div class=`z-10 flex flex-col h-full w-full justify-center`>
+      <div class="bg-[#ffffff99] m-32 h-[80dvh] flex flex-wrap gap-5">
+        <img
+          src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
+          alt="EmvMusic logo"
+          class="drop-shadow-3xl"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/gritofestivalblack.webp"}
+          alt="Grito Festival logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/gritorockblackwebp.webp"}
+          alt="Grito Rock logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/fundaciongaiapachalogo.webp"}
+          alt="Fundación Gaia Pacha logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/umsslogo.webp"}
+          alt="UMSS logo"
+        />
+        <Logo6Music />
+      </div>
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full">
       <img
