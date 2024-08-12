@@ -10,9 +10,18 @@ import SliderWrapperText from "../components/SliderWrapperText.astro";
 import GritoFestivalIconContainer from "../components/GritoFestivalIconContainer.astro";
 import CorazonIconContainer from "../components/CorazonIconContainer.astro";
 import SliderImagesButton from "../components/SliderImagesButton.astro";
+import FondoGritoElectroText from "../assets/fondos/FondoGritoElectroText.astro";
+import FondoGritoElectro from "../assets/fondos/FondoGritoElectro.astro";
+import SectionColorsSliderGrito from "../components/SectionColorsSliderGrito.astro";
+import FondoGritoUrbanoText from "../assets/fondos/FondoGritoUrbanoText.astro";
+import FondoGritoUrbano from "../assets/fondos/FondoGritoUrbano.astro";
+import SliderHeaderTitle from "../components/SliderHeaderTitle.astro";
+import SliderGritos from "../components/SliderGritos.astro";
+import SliderLeftButton from "../components/SliderLeftButton.astro";
+import SliderRightButton from "../components/SliderRightButton.astro";
 ---
 
-<Layout title="Nuestro Festival">
+<Layout title="Nuestro Festival | Grito Rock | Grito Festival">
   <SliderWrapperText />
 
   <SectionArticle>
@@ -42,16 +51,16 @@ import SliderImagesButton from "../components/SliderImagesButton.astro";
   </SectionArticle>
 
   <section
-    class="w-full py-16 h-full bg-gradient-to-b from-skyblue-semi to-slate-50 flex items-center justify-center overflow-hidden"
+    class="w-full h-full bg-gradient-to-b from-skyblue-semi to-slate-50 flex items-center justify-center overflow-hidden"
   >
-    <div class="absolute max-xl:w-5/6 w-2/4 ">
+    <div class="absolute max-xl:w-5/6 w-2/4">
       <SliderImages>
         <SliderImagesContent
-          urlImage="/src/assets/Recurso1.png"
+          urlImage={import.meta.env.BASE_URL + "/img/Recurso1.png"}
           slot="images"
         />
         <SliderImagesContent
-          urlImage="/src/assets/Recurso2.png"
+          urlImage={import.meta.env.BASE_URL + "/img/Recurso2.png"}
           slot="images"
         />
         <SliderImagesButton slot="button" />
@@ -66,7 +75,9 @@ import SliderImagesButton from "../components/SliderImagesButton.astro";
 
   <SectionArticle>
     <div class="text-center w-full">
-      <h3 class="text-4xl text-red-ligth font-bold">AGRADECIMIENTOS</h3>
+      <h3 class="text-4xl max-md:text-3xl text-red-ligth font-bold">
+        AGRADECIMIENTOS
+      </h3>
       <p class="text-blue-dark text-2xl text-pretty">
         Por hacer posible esta primera <br /> versión de Grito Latidxs
       </p>
@@ -78,16 +89,61 @@ import SliderImagesButton from "../components/SliderImagesButton.astro";
     >
       <ImageProfile
         name="Esther Rodrigez"
-        urlImage="/src/assets/persona1.webp"
+        urlImage={import.meta.env.BASE_URL + "/img/persona1.webp"}
       />
       <ImageProfile
         name="Josue Urioste Mancilla"
-        urlImage="/src/assets/persona2.webp"
+        urlImage={import.meta.env.BASE_URL + "/img/persona2.webp"}
       />
       <ImageProfile
         name="Aneliz Rodrigez"
-        urlImage="/src/assets/persona3.webp"
+        urlImage={import.meta.env.BASE_URL + "/img/persona3.webp"}
       />
     </div>
   </SectionArticle>
+
+  <!-- GRITO ELECTRO -->
+  <!-- Grito Electro -->
+  <SliderHeaderTitle title="Grito Electro">
+    <FondoGritoElectroText slot="bgText" />
+    <SliderGritos slot="slider">
+      <SliderImagesContent
+        urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+      />
+      <SliderImagesContent
+        urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+      />
+      <SliderImagesContent
+        urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+      />
+      <SliderImagesButton slot="button" />
+      <SliderImagesButton slot="button" />
+      <SliderImagesButton slot="button" />
+      <SliderLeftButton />
+      <SliderRightButton />
+      <FondoGritoElectro slot="bgSlider" />
+    </SliderGritos>
+  </SliderHeaderTitle>
+
+  <!-- Grito Urbano -->
+  <SliderHeaderTitle title="Grito Urbano">
+    <FondoGritoUrbanoText slot="bgText" />
+    <SliderGritos slot="slider">
+      <SliderImagesContent
+        urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+      />
+      <SliderImagesContent
+        urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+      />
+      <SliderImagesContent
+        urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+      />
+      <SliderImagesButton slot="button" />
+      <SliderImagesButton slot="button" />
+      <SliderImagesButton slot="button" />
+      <SliderLeftButton />
+      <SliderRightButton />
+      <FondoGritoUrbano slot="bgSlider" />
+    </SliderGritos>
+  </SliderHeaderTitle>
 </Layout>

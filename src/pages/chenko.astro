@@ -2,54 +2,63 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout
-  title="Chenk'o Feria"
-  bgColor="#84EBE3"
->
-<section class="w-full h-lvh" style="background-image: url('/public/chenko_feria_fondo.png'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
-  <div class="flex flex-col gap-24 flex-grow items-center mx-32 pt-32">
-    <div class="relative w-[720px] h-20">
-      <div
-        class="border border-black z-0 w-full h-20 bg-rose-500 absolute left-[-0.5em] bottom-[0.5em]"
-      >
-      </div>
-      <div
-        class="border border-black z-0 w-full h-20 bg-rose-500 absolute left-[-1em] bottom-[1em]"
-      >
-      </div>
-      <div
-        class="border border-black z-0 w-full h-20 bg-rose-500 absolute flex justify-center items-center space-x-4 left-[-1.5em] bottom-[1.5em]"
-      >
-        <p class="text-white text-6xl font-bold">CHEN'KO FERIA</p>
-        <img
-          src="/public/estrella_amarilla.png"
-          class="w-12"
-          alt="estrella amarilla"
-        />
-      </div>
-    </div>
-    <div class="relative w-[1080px] h-48">
-      <span class="z-10">CHEN'KO FERIA</span>
-      <div
-        class="border border-black z-0 w-full h-full bg-yellow-400 absolute left-[-0.5em] bottom-[0.5em]"
-      >
-      </div>
-      <div
-        class="border border-black z-0 w-full h-full bg-yellow-400 absolute left-[-1em] bottom-[1em]"
-      >
-      </div>
-      <div
-        class="border p-2 text-center border-black z-0 w-full h-full bg-yellow-400 absolute flex justify-center items-center left-[-1.5em] bottom-[1.5em]"
-      >
-        <p class="text-white text-3xl font-bold">
-          Hacemos historia feminizando escenarios<br />Articula a artistas,
-          diseñadores, productorxs, tiendas musicales y otros que generan
-          economía creativa y tiene la finalidad de promocionar productos
-          oriinales, fortaleciendo emprendimientos artísticos culturales.
-        </p>
-        <img src="/public/estrella_rosa.png" class="w-12" alt="estrella rosa" />
-      </div>
-    </div>
+<Layout title="Chenk'o Feria | Grito Rock | Grito Festival" bgColor="#84EBE3">
+  <div class="absolute">
+    <img
+      src={import.meta.env.BASE_URL + "/img/chenko_feria_fondo.png"}
+      alt=""
+    />
   </div>
-</section>
+  <section class="w-full h-lvh">
+    <div
+      class="relative flex flex-col gap-24 flex-grow items-center mx-32 pt-32"
+    >
+      <div class="relative w-[720px] h-20">
+        <div
+          class="border border-black z-0 w-full h-20 bg-rose-500 absolute left-[-0.5em] bottom-[0.5em]"
+        >
+        </div>
+        <div
+          class="border border-black z-0 w-full h-20 bg-rose-500 absolute left-[-1em] bottom-[1em]"
+        >
+        </div>
+        <div
+          class="border border-black z-0 w-full h-20 bg-rose-500 absolute flex justify-center items-center space-x-4 left-[-1.5em] bottom-[1.5em]"
+        >
+          <p class="text-white text-6xl font-bold">CHEN'KO FERIA</p>
+          <img
+            src={import.meta.env.BASE_URL + "/img/estrella_amarilla.png"}
+            class="w-12"
+            alt="estrella amarilla"
+          />
+        </div>
+      </div>
+      <div class="relative w-[1080px] h-48">
+        <span class="z-10">CHEN'KO FERIA</span>
+        <div
+          class="border border-black z-0 w-full h-full bg-yellow-400 absolute left-[-0.5em] bottom-[0.5em]"
+        >
+        </div>
+        <div
+          class="border border-black z-0 w-full h-full bg-yellow-400 absolute left-[-1em] bottom-[1em]"
+        >
+        </div>
+        <div
+          class="border p-2 text-center border-black z-0 w-full h-full bg-yellow-400 absolute flex justify-center items-center left-[-1.5em] bottom-[1.5em]"
+        >
+          <p class="text-white text-3xl font-bold">
+            Hacemos historia feminizando escenarios<br />Articula a artistas,
+            diseñadores, productorxs, tiendas musicales y otros que generan
+            economía creativa y tiene la finalidad de promocionar productos
+            oriinales, fortaleciendo emprendimientos artísticos culturales.
+          </p>
+          <img
+            src={import.meta.env.BASE_URL + "/img/estrella_rosa.png"}
+            class="w-12"
+            alt="estrella rosa"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>

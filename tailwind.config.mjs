@@ -24,6 +24,9 @@ export default {
       boxShadow: {
         "custom-shadow": "15px 11px 5px rgba(0, 0, 0, 1)",
       },
+      dropShadow: {
+        '3xl': '0 12px 7px rgba(0, 0, 0, 1)',
+      }
     },
   },
   plugins: [require("flowbite/plugin")],

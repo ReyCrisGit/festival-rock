@@ -1,0 +1,38 @@
+---
+
+---
+
+<section class="flex w-full h-full text-center relative overflow-hidden">
+  <div class=`z-10  h-full w-full`>
+    <div class="flex h-full justify-center items-center md:p-6 p-2">
+      <div
+        id="default-carousel"
+        class="relative sm:w-[40vw] w-[85vw]"
+        data-carousel="slide"
+      >
+        <!-- Slider Images -->
+        <div
+          class="relative sm:h-[30vw] h-[50vw] overflow-hidden rounded-lg top-0 bottom-0"
+        >
+          <slot />
+        </div>
+
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <slot name="button" />
+        </div>
+
+        <!-- Slider controls -->
+        <slot name="buttonLeft" />
+
+        <slot name="buttonRight" />
+      </div>
+    </div>
+  </div>
+  <div class="absolute w-full ">
+    <slot name="bgSlider" />
+  </div>
+  <script src="/src/scripts/slider.js"></script>
+</section>

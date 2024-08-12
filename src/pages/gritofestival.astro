@@ -2,16 +2,20 @@
 import LogoGrito from "../icons/LogoGrito.astro";
 import FondoGrito from "../assets/fondos/FondoGrito.astro";
 import Layout from "../layouts/Layout.astro";
-import SliderImages from "../components/SliderImages.astro";
 import SliderImagesButton from "../components/SliderImagesButton.astro";
 import SliderImagesContent from "../components/SliderImagesContent.astro";
-import Paragraph from "../components/Paragraph.astro";
 import FondoSliderInicio from "../assets/fondos/FondoSliderInicio.astro";
+import Rompe from "../icons/Rompe.astro";
+import Equipo from "../icons/Equipo.astro";
+import SliderGritos from "../components/SliderGritos.astro";
+import SliderLeftButton from "../components/SliderLeftButton.astro";
+import SliderRightButton from "../components/SliderRightButton.astro";
+import Calabera from "../icons/Calabera.astro";
 ---
 
-<Layout title="Grito Festival">
+<Layout title="Grito Festival | Grito Rock ">
 
-    <div class=" w-full absolute grid grid-cols-2">
+    <div class="w-full absolute grid grid-cols-2">
       <div>
         <LogoGrito />
       </div>
@@ -24,12 +28,12 @@ import FondoSliderInicio from "../assets/fondos/FondoSliderInicio.astro";
           en red, producido de manera conjunta en diversas ciudades y países de
           Latinoamérica, Europa y África.
         </p>
-        <p>          Por lo general se realiza en el período cercano a las fiestas del
+        <p>Por lo general se realiza en el período cercano a las fiestas del
           primer semestre, llegando y articulando a más de 400 ciudades en el
           mundo. Pionero en su lógica integrada, colaborativa y descentralizada,
           el festival tiene una trayectoria de expansión sin precedentes.
         </p>
-        <p>          El Grito se caracteriza desde sus inicios por ser un festival
+        <p>El Grito se caracteriza desde sus inicios por ser un festival
           conectado con su tiempo y los cambios del planeta, articulando
           campañas y acciones conjuntas a las transformaciones y nuevas
           expresiones activistas.
@@ -39,27 +43,51 @@ import FondoSliderInicio from "../assets/fondos/FondoSliderInicio.astro";
 
 
       
-      <section class=" w-full py-16 h-full">
-        <div class=" absolute w-full grid justify-items-center items-center">
-          <div class="pt-80 absolute max-xl:w-5/6 w-3/4 grid grid-cols-1">
-          <SliderImages>
-            <SliderImagesContent urlImage="/src/assets/B1.png" slot="images"  urlImage="/src/assets/B1.png" slot="images" />
-            <SliderImagesContent urlImage="/src/assets/B2.png" slot="images" />
-            <SliderImagesContent urlImage="/src/assets/persona3.webp" slot="images" />
-            <SliderImagesContent urlImage="/src/assets/persona2.webp" slot="images" />
-            <SliderImagesButton slot="button" />
-            <SliderImagesButton slot="button" />
-            <SliderImagesButton slot="button" />
-            <SliderImagesButton slot="button" />
-            
-          </SliderImages>
+      <section class="pt-20">
+        <div class="absolute w-full">
+          <Calabera>
+            </div> 
+
+        <div class="pl-24 pt-96 absolute grid justify-items-center grid-cols-2 ">
           
-        </div>
+            <SliderGritos slot="slider">
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoElectroImg1.webp"}
+              />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderLeftButton />
+              <SliderRightButton />
+            </SliderGritos>
         
-          <div class="w-full object-cover">
-            <div>
-              <FondoSliderInicio/>  
-          </div>  
+          <!-- Grito Urbano -->
+            <SliderGritos slot="slider">
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+              />
+              <SliderImagesContent
+                urlImage={import.meta.env.BASE_URL + "/img/gritoUrbanoImg1.webp"}
+              />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderImagesButton slot="button" />
+              <SliderLeftButton />
+              <SliderRightButton />
+            </SliderGritos>
+          </SliderHeaderTitle>
+            <div class="pt-72">
+              <FondoSliderInicio>
+          </div>
       </section>
 
     </div>
@@ -67,5 +95,42 @@ import FondoSliderInicio from "../assets/fondos/FondoSliderInicio.astro";
       <FondoGrito />
     </div>
   
+    <!-- Componentes -->
+  <div class="overflow-hidden">
+    <div class="text-6xl text-white bg-[#0ad0f3]">
+      <h1 class="pt-16 absolute font-bold text-center w-full">COMPONENTES</h1>
+      <div
+        class="absolute flex flex-col items-center pt-28 [&_p]:text-5xl [&_p]:pt-16 [&_p]:px-[1%] [&_p]:text-center [&_p]:text-black"
+      >
+        <p>
+          Grito Festival, en su version Grito Rock es una plataforma gestionado
+          en red, producido de manera conjunta en diversas ciudades y países de
+          Latinoamérica, Europa y África.
+        </p>
+        <p>
+          Por lo general se realiza en el período cercano a las fiestas del
+          primer semestre, llegando y articulando a más de 400 ciudades en el
+          mundo. Pionero en su lógica integrada, colaborativa y descentralizada,
+          el festival tiene una trayectoria de expansión sin precedentes.
+        </p>
+        <p>
+          El Grito se caracteriza desde sus inicios por ser un festival
+          conectado con su tiempo y los cambios del planeta, articulando
+          campañas y acciones conjuntas a las transformaciones y nuevas
+          expresiones activistas.
+        </p>
+      </div>
+      <Rompe />
+    </div>
+    <!-- Equipo -->
+    <header class="bg-yellow-300">
+      <h2 class="text-white uppercase text-center text-8xl font-bold py-2">
+        equipo
+      </h2>
+    </header>
+    <div>
+      <Equipo />
+    </div>
+  </div>
   </Layout
 >

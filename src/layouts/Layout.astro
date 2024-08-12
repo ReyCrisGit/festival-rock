@@ -1,12 +1,12 @@
 ---
-import Navbar from "../components/Navbar.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
   title: string;
   bgColor?: string;
-  bgImage?: string;
 }
 
-const { title, bgColor, bgImage } = Astro.props;
+const { title, bgColor } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,12 +21,11 @@ const { title, bgColor, bgImage } = Astro.props;
     <title>{title}</title>
   </head>
   <body style=`background-color:${bgColor}; `>
-    <header>
-      <Navbar />
-    </header>
+    <Header />
     <main>
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
 
@@ -56,7 +55,6 @@ const { title, bgColor, bgImage } = Astro.props;
     background-size: 224px;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
   }
   code {
     font-family:
