@@ -65,7 +65,22 @@ import Logo6Music from "../icons/Logo6music.astro";
     class="flex bg-white h-screen w-full text-center relative overflow-hidden"
   >
     <div class=`z-10 flex flex-col h-full w-full justify-center`>
-      <div class="bg-[#ffffff99] m-32 h-[80dvh] flex flex-wrap gap-5">
+      <div
+        class="bg-[#ffffff99] m-32 h-[80dvh] flex flex-wrap gap-10 [&_img]:h-48 [&_img]:m-7 justify-evenly"
+      >
+        <img
+          src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
+          alt="EmvMusic logo"
+          class="drop-shadow-3xl"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/somStudiologo.png"}
+          alt="Grito Rock logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/coopArtlogo.png"}
+          alt="Fundación Gaia Pacha logo"
+        />
         <img
           src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
           alt="EmvMusic logo"
@@ -87,7 +102,10 @@ import Logo6Music from "../icons/Logo6music.astro";
           src={import.meta.env.BASE_URL + "/img/umsslogo.webp"}
           alt="UMSS logo"
         />
-        <Logo6Music />
+        <img
+        src={import.meta.env.BASE_URL + "/img/logo6music.png"}
+        alt="music logo"
+      />
       </div>
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full">
