@@ -8,7 +8,7 @@ import Layout from "../layouts/Layout.astro";
   >
     <div class=`z-10 flex flex-col h-full w-full justify-center`>
       <h1
-        class="bg-[#000000ad] md:text-[2vw] md:leading-[3vw] text-2xl md:px-32 px-3 font-bold tracking-[0.2rem]"
+        class="bg-[#000000ad] md:text-[2vw] md:leading-[3vw] text-2xl md:px-32 px-3 font-bold tracking-[0.5rem]"
       >
         Hacemos historia feminizando escenarios<br />Articula a artistas,
         diseñadores, productorxs,<br /> tiendas musicales y otros que generan economía
@@ -19,40 +19,32 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full">
       <img
-        src="/public/img/fondomovilcoopart.webp"
+        src={import.meta.env.BASE_URL + "/img/fondomovilcoopart.webp"}
         alt=""
         class="h-full w-full object-cover object-center hidden small:block"
       />
       <img
-        src="/public/img/fondoCoopart.webp"
+        src={import.meta.env.BASE_URL + "/img/fondoCoopart.webp"}
         alt=""
         class="h-full w-full object-cover object-center"
       />
     </div>
   </section>
-  
+
   <section
     class="flex bg-white h-screen w-full text-center relative overflow-hidden"
   >
     <div class=`z-10 flex flex-col h-full w-full justify-center`>
-      <h1
-        class="bg-[#000000ad] md:text-[2vw] md:leading-[3vw] text-2xl md:px-32 px-3 font-bold tracking-[0.2rem]"
-      >
-        Hacemos historia feminizando escenarios<br />Articula a artistas,
-        diseñadores, productorxs,<br /> tiendas musicales y otros que generan economía
-        <br />
-        creativa y tiene la finalidad de promocionar <br /> productos originales,
-        fortaleciendo <br /> emprendimientos artísticos culturales.
-      </h1>
+      <!-- imagenes -->
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full">
       <img
-        src="/public/img/fondomovilcoopart.webp"
+        src={import.meta.env.BASE_URL + "/img/fondomovilcoopart.webp"}
         alt=""
         class="h-full w-full object-cover object-center hidden small:block"
       />
       <img
-        src="/public/img/fondoCoopart.webp"
+        src={import.meta.env.BASE_URL + "/img/fondoCoopart.webp"}
         alt=""
         class="h-full w-full object-cover object-center"
       />
@@ -108,13 +100,13 @@ import Layout from "../layouts/Layout.astro";
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full">
       <img
-        src="/public/img/fondomovilcoopart.webp"
-        alt=""
+        src={import.meta.env.BASE_URL + "/img/fondomovilcoopart.webp"}
+        alt="Fondo celular"
         class="h-full w-full object-cover object-center hidden small:block"
       />
       <img
-        src="/public/img/fondoCoopart.webp"
-        alt=""
+        src={import.meta.env.BASE_URL + "/img/fondoCoopart.webp"}
+        alt="Fondo Original"
         class="h-full w-full object-cover object-center"
       />
     </div>
