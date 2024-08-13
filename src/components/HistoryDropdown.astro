@@ -18,14 +18,14 @@ const applySpacing = paragraphs.length > 1;
 <details class="list-none flex flex-col">
   <summary
     style={`font-size: ${tamanio} || 'inherit'; box-shadow: rgba(0, 0, 0, 0.5) 0 4px 5px inset, rgba(0, 0, 0, 0.5) 0 -4px 5px inset;`}
-    class="border-y border-[#E3E3E3] w-full list-none text-6xl font-bold text-[#E3E3E3] shadow-x text-center py-2 cursor-pointer"
+    class="border-y border-[#E3E3E3] w-full list-none text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-[#E3E3E3] shadow-x text-center py-2 cursor-pointer"
     set:html={subtitle}
   />
   <div class={applySpacing ? "space-y-4" : ""}>
     {
       paragraph1 && (
         <>
-          <p class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 pt-4 text-center">
+          <p class="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 pt-4 text-center">
             {paragraph1}
           </p>
         </>
@@ -34,21 +34,21 @@ const applySpacing = paragraphs.length > 1;
     {
       paragraph2 && (
         <p
-          class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 text-center"
+          class="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 text-center"
           set:html={paragraph2}
         />
       )
     }
     {
       paragraph3 && (
-        <p class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 text-center">
+        <p class="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 text-center">
           {paragraph3}
         </p>
       )
     }
     {
       paragraph4 && (
-        <p class="text-white font-bold text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 text-center">
+        <p class="text-white font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl max-w-6xl mx-auto sm:px-6 lg:px-8 text-center">
           {paragraph4}
         </p>
       )
