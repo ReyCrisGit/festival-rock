@@ -1,21 +1,100 @@
 ---
 import FondoHistorico from "../assets/fondos/FondoHistorico.astro";
 import Layout from "../layouts/Layout.astro";
-
 ---
 
 <Layout title="Historico | Grito Rock | Grito Festival">
   <section class="bg-[#c581e4]">
- 
-        <div class="main absolute">
-            <div class="card" id="c1"></div>
-            <div class="card" id="c2"></div>
-            <div class="card" id="c3"></div>
-            <div class="card" id="c4"></div>
+    <div class="grid justify-items-center">
+      <div class="absolute">
+        <div
+          class="relative flex flex-col gap-24 flex-grow items-center mx-32 pt-64"
+        >
+          <div class="relative w-[96px] h-40 flex items-center"></div>
+        </div>
+        <div class="relative w-[700px] h-96">
+          <div
+            class="border-4 border-black
+              z-0 w-full h-full bg-[#ded63f] absolute left-[-0.5em] bottom-[0.5em]"
+          >
           </div>
+
+          <div
+            class="border-4 border-black z-0 w-full
+              h-full bg-[#ded63f] absolute left-[-1em] bottom-[1em]"
+          >
+          </div>
+
+          <div
+            class="border-4 p-2 text-center border-black
+              z-0 w-full h-full bg-[#ded63f] absolute
+              flex justify-center items-center left-[-1.5em] bottom-[1.5em]"
+          >
+            <img
+              src={import.meta.env.BASE_URL + "/public/img/B2.png"}
+              class="absolute h-80 w-[680px]"
+              alt="imagen"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full object-cover">
+        <FondoHistorico />
+      </div>
+    </div>
+    <section class="bg-[#c581e4]">
+      <div class="grid justify-items-center">
+        <div class="absolute">
+          <div
+            class="relative flex flex-col gap-24 flex-grow items-center mx-32 pt-64"
+          >
+            <div class="relative w-[96px] h-96 flex items-center"></div>
+          </div>
+          <div class="relative w-[700px] h-96">
+            <div
+              class="border-4 border-black
+              z-0 w-full h-[670px] bg-[#ded63f] absolute left-[1em] bottom-[0.5em]"
+            >
+            </div>
+
+            <div
+              class="border-4 border-black z-0 w-full
+              h-[690px] bg-[#ded63f] absolute left-[-1em] bottom-[2em]"
+            >
+            
+            </div>
+            
+            
+              
+            <p  class="decoration-* absolute pt-20 text-4xl pl-[5%] pr-[30%] text">
+              Conciencia ambiental Incidencia cultural #LeyDeCulturasArtes
+              Género y diversidades Entre otros
+            </p>
+
+            <div
+              class="border-4 p-2 text-center border-black
+              z-0 w-full h-full bg-[#ded63f] absolute
+              flex justify-center items-center left-[-2em] bottom-[22em]"
+            >
+            
+              <img
+                src={import.meta.env.BASE_URL + "/public/img/B2.png"}
+                class="absolute h-80 w-[680px]"
+                alt="imagen"
+              />
+            </div>
+            
+          </div>
+          
+        </div>
+
+        <div class="w-full object-cover">
+          <FondoHistorico />
+        </div>
         
-        </section>
-
-</Layout>
-
-
+      </div>
+      
+    </section>
+  </section></Layout
+>
