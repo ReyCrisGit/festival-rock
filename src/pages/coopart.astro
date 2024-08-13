@@ -1,10 +1,114 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import FondoCoopart from "../assets/fondos/FondoCoopart.astro";
 ---
 
 <Layout title="CoopArt | Grito Rock | Grito Festival">
-  <section>
-    <FondoCoopart />
+  <section
+    class="flex bg-white h-screen w-full text-center relative overflow-hidden"
+  >
+    <div class=`z-10 flex flex-col h-full w-full justify-center`>
+      <h1
+        class="bg-[#000000ad] md:text-[2vw] md:leading-[3vw] text-2xl md:px-32 px-3 font-bold tracking-[0.5rem]"
+      >
+        Hacemos historia feminizando escenarios<br />Articula a artistas,
+        diseñadores, productorxs,<br /> tiendas musicales y otros que generan economía
+        <br />
+        creativa y tiene la finalidad de promocionar <br /> productos originales,
+        fortaleciendo <br /> emprendimientos artísticos culturales.
+      </h1>
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full">
+      <img
+        src={import.meta.env.BASE_URL + "/img/fondomovilcoopart.webp"}
+        alt=""
+        class="h-full w-full object-cover object-center hidden small:block"
+      />
+      <img
+        src={import.meta.env.BASE_URL + "/img/fondoCoopart.webp"}
+        alt=""
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
+  </section>
+
+  <section
+    class="flex bg-white h-screen w-full text-center relative overflow-hidden"
+  >
+    <div class=`z-10 flex flex-col h-full w-full justify-center`>
+      <!-- imagenes -->
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full">
+      <img
+        src={import.meta.env.BASE_URL + "/img/fondomovilcoopart.webp"}
+        alt=""
+        class="h-full w-full object-cover object-center hidden small:block"
+      />
+      <img
+        src={import.meta.env.BASE_URL + "/img/fondoCoopart.webp"}
+        alt=""
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
+  </section>
+
+  <section
+    class="flex bg-white h-screen w-full text-center relative overflow-hidden"
+  >
+    <div class=`z-10 flex flex-col h-full w-full justify-center`>
+      <div
+        class="bg-[#ffffff99] m-32 max-lg:m-14 max-sm:m-6 h-[80dvh] max-md:h-[100dvh] flex flex-wrap gap-10 max-lg:gap-4 [&_img]:h-48 max-2xl:[&_img]:h-36 max-lg:[&_img]:h-24 [&_img]:m-[1vw] justify-evenly"
+      >
+        <img
+          src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
+          alt="EmvMusic logo"
+          class="drop-shadow-3xl"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/somStudiologo.png"}
+          alt="Grito Rock logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/coopArtlogo.png"}
+          alt="Fundación Gaia Pacha logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
+          alt="EmvMusic logo"
+          class="drop-shadow-3xl"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/gritofestivalblack.webp"}
+          alt="Grito Festival logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/gritorockblackwebp.webp"}
+          alt="Grito Rock logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/fundaciongaiapachalogo.webp"}
+          alt="Fundación Gaia Pacha logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/umsslogo.webp"}
+          alt="UMSS logo"
+        />
+        <img
+          src={import.meta.env.BASE_URL + "/img/logo6music.png"}
+          alt="music logo"
+        />
+      </div>
+    </div>
+    <div class="absolute top-0 bottom-0 h-full w-full">
+      <img
+        src={import.meta.env.BASE_URL + "/img/fondomovilcoopart.webp"}
+        alt="Fondo celular"
+        class="h-full w-full object-cover object-center hidden small:block"
+      />
+      <img
+        src={import.meta.env.BASE_URL + "/img/fondoCoopart.webp"}
+        alt="Fondo Original"
+        class="h-full w-full object-cover object-center"
+      />
+    </div>
   </section>
 </Layout>

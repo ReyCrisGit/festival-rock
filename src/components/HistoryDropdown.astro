@@ -1,5 +1,4 @@
 ---
-import List from "./List.astro";
 interface Props {
   subtitle: string;
   paragraph1?: string;
@@ -19,7 +18,7 @@ const applySpacing = paragraphs.length > 1;
 <details class="list-none flex flex-col">
   <summary
     style={`font-size: ${tamanio} || 'inherit'; box-shadow: rgba(0, 0, 0, 0.5) 0 4px 5px inset, rgba(0, 0, 0, 0.5) 0 -4px 5px inset;`}
-    class="border-y border-[#E3E3E3] w-full list-none text-6xl font-bold text-[#E3E3E3] cursor-default shadow-x text-center py-2"
+    class="border-y border-[#E3E3E3] w-full list-none text-6xl font-bold text-[#E3E3E3] shadow-x text-center py-2 cursor-pointer"
     set:html={subtitle}
   />
   <div class={applySpacing ? "space-y-4" : ""}>

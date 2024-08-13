@@ -30,7 +30,7 @@ import FondoGritoUrbano from "../assets/fondos/FondoGritoUrbano.astro";
   </section>
 
   <section class="bg-gradient-to-b from-teal-50 to-skyblue-semi">
-    <header class="bg-black">
+    <header class="text-white bg-black">
       <h2 class="uppercase text-center text-[6vw] font-bold">Auspiciadores</h2>
       <SliderWrapperText />
     </header>
@@ -118,5 +118,26 @@ import FondoGritoUrbano from "../assets/fondos/FondoGritoUrbano.astro";
         <FondoGritoUrbano slot="bgSlider" />
       </SliderGritos>
     </SliderHeaderTitle>
+  </section>
+  <section
+    class=" bg-[#fffb0e] overflow-hidden whitespace-nowrap flex items-center h-[40vw] max-md:h-[60vw] -mt-1"
+  >
+    <div
+      class="flex justify-evenly items-center flex-wrap max-xl:p-4 py-4 md:gap-4 gap-1 w-full [&_img]:w-auto [&_img]:h-48 max-md:[&_img]:h-20 "
+    >
+      <img
+        src={import.meta.env.BASE_URL + "/img/somStudiologo.png"}
+        alt="Grito Rock logo"
+      />
+      <img
+        src={import.meta.env.BASE_URL + "/img/coopArtlogo.png"}
+        alt="Fundación Gaia Pacha logo"
+      />
+      <img
+        src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
+        alt="EmvMusic logo"
+        class="drop-shadow-3xl"
+      />
+    </div>
   </section>
 </Layout>
