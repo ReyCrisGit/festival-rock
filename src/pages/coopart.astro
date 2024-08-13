@@ -32,7 +32,7 @@ import Logo6Music from "../icons/Logo6music.astro";
       />
     </div>
   </section>
-
+  
   <section
     class="flex bg-white h-screen w-full text-center relative overflow-hidden"
   >
@@ -66,7 +66,7 @@ import Logo6Music from "../icons/Logo6music.astro";
   >
     <div class=`z-10 flex flex-col h-full w-full justify-center`>
       <div
-        class="bg-[#ffffff99] m-32 h-[80dvh] flex flex-wrap gap-10 [&_img]:h-48 [&_img]:m-7 justify-evenly"
+        class="bg-[#ffffff99] m-32 max-lg:m-14 max-sm:m-6 h-[80dvh] max-md:h-[100dvh] flex flex-wrap gap-10 max-lg:gap-4 [&_img]:h-48 max-2xl:[&_img]:h-36 max-lg:[&_img]:h-24 [&_img]:m-[1vw] justify-evenly"
       >
         <img
           src={import.meta.env.BASE_URL + "/img/emvmusiclogo.webp"}
@@ -103,9 +103,9 @@ import Logo6Music from "../icons/Logo6music.astro";
           alt="UMSS logo"
         />
         <img
-        src={import.meta.env.BASE_URL + "/img/logo6music.png"}
-        alt="music logo"
-      />
+          src={import.meta.env.BASE_URL + "/img/logo6music.png"}
+          alt="music logo"
+        />
       </div>
     </div>
     <div class="absolute top-0 bottom-0 h-full w-full">
